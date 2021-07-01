@@ -11,6 +11,26 @@
 
   gtag('config', 'G-40DYH0ZKV6');
 </script> 
+    
+<!--Generate PDF-->
+    <script>
+    var doc = new jsPDF();
+    var specialElementHandlers = {
+        '#editor': function (element, renderer) {
+            return true;
+        }
+    };
+
+    $('#cmd').click(function () {
+        doc.fromHTML($('#content').html(), 15, 15, {
+            'width': 170,
+                'elementHandlers': specialElementHandlers
+        });
+        doc.save('sample-file.pdf');
+    });
+
+    // This code is collected but useful, click below to jsfiddle link.
+</script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NJT5EMVRDS"></script>
@@ -413,25 +433,9 @@
 
 <div id="editor"></div>
 <center><button id="cmd">Generate PDF</button></center>
+<br>
 
-<script>
-    var doc = new jsPDF();
-    var specialElementHandlers = {
-        '#editor': function (element, renderer) {
-            return true;
-        }
-    };
 
-    $('#cmd').click(function () {
-        doc.fromHTML($('#content').html(), 15, 15, {
-            'width': 170,
-                'elementHandlers': specialElementHandlers
-        });
-        doc.save('sample-file.pdf');
-    });
-
-    // This code is collected but useful, click below to jsfiddle link.
-</script>
 
 <center> <a href='http://www.freevisitorcounters.com'>on freevisitorcounters.com</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=cf069cd181c4a0f89af65f0aea11dca75d38c2cd'></script>
 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/828538/t/2"></script></center>
