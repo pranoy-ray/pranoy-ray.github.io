@@ -1,4 +1,4 @@
-# Pranoy Ray's Portfolio
+# Pranoy's Portfolio
 
 NOTE: You can access this Github page at https://pranoy-ray.github.io
 
