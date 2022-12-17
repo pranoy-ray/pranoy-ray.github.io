@@ -1,4 +1,6 @@
-# pranoy-ray.github.io
+# Pranoy Ray's Portfolio
+
+NOTE: You can access this Github page at https://pranoy-ray.github.io
 
 Hey! I’m a computational materials science researcher focused on building data-driven models and automation tools to address fundamental and applied problems in the pursuit of accelerated materials discovery. Further, I’m a doctoral researcher at the MINED Group in GeorgiaTech working on developing autonomous systems for materials design and modeling to support materials design and discovery. My advisor is Dr. Surya Kalidindi.
 
