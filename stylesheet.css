@@ -109,9 +109,7 @@ name {
 }
 
 .cent {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    vertical-align: middle;
 }
 
 .one {
