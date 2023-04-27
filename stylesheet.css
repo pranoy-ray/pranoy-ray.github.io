@@ -108,7 +108,7 @@ name {
   font-size: 32px;
 }
 
-table {
+.cent {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
