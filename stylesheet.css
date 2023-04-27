@@ -108,6 +108,12 @@ name {
   font-size: 32px;
 }
 
+tabel {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .one {
   width: 160px;
   height: 160px;
