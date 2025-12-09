@@ -2,10 +2,8 @@
 
 NOTE: You can access this Github page at https://pranoy-ray.github.io
 
+Computational Materials Scientist and AI/ML Engineer with a dual background in Mechanical Engineering and Computational Science. Specialized in benchmarking and optimizing MLIPs and Bayesian frameworks for materials discovery, while deploying AI workflows (Lean CNNs) on HPC infrastructure. Proven leader of multidisciplinary teams in high-profile R&D projects, driving timelines and deliverables within fast-paced startup and academic environments. Experienced in building diverse teams, resolving root causes, and communicating complex milestones. Innovator with expertise in materials chemistry, molecular simulations, and feature engineering within product-driven Materials Informatics and ICME workflows.
+
 Google Scholar at: https://scholar.google.com/citations?user=SYuG3BUAAAAJ&hl=en&authuser=2
 
-Hey! I’m a computational materials science researcher focused on building data-driven models and automation tools to address fundamental and applied problems in the pursuit of accelerated materials discovery. Further, I’m a doctoral researcher at the MINED Group in GeorgiaTech working on developing autonomous systems for materials design and modeling to support materials design and discovery. My advisor is Dr. Surya Kalidindi.
-
-I completed my undergraduate Thesis under Dr. Brahmananda Chakraborty at the High Pressure and Synchroton Radiation Physics Division (HP&SRPD) in Bhabha Atomic Research Centre, Mumbai, India. My main research focus was on applications of Density Functional Theory to develop novel materials for Solid-State Hydrogen Storage.
-
-Contact me at gtpranoy@gmail.com
+Contact me at gtpranoy@gmail.com or pranoy@gatech.edu
