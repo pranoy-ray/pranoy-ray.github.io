@@ -278,6 +278,27 @@
         .col-half { flex: 1; }
         @media (max-width: 768px) { .row { flex-direction: column; } }
 
+        .links {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+
+        .links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .subtit a {
+            color: var(--gt-gold);
+        }
+
     </style>
 </head>
 <body>
@@ -291,8 +312,8 @@
         <div class="hero-content">
             <img src="images/pr_colorado-circle-comp.png" alt="Pranoy Ray" class="profile-img" onerror="this.src='https://via.placeholder.com/150'">
             <h1 class="hero-title">Pranoy Ray</h1>
-            <p style="font-size: 1.2rem;">Materials Informatics PhD Candidate @GeorgiaTech | Woodruff, Novelis Scholar 
-            </p>
+            <strong><p style="font-size: 1.2rem; color: #fcba03">Materials Informatics PhD Candidate @GeorgiaTech | Woodruff, Novelis Scholar 
+            </p></strong>
             <div class="social-links">
             <a href="#research">Research</a>
             <a href="#experience">Experience</a>
@@ -319,12 +340,12 @@
             
             <div class="card">
                 <div class="card-header">
-                    <h3>Molecular Voxelization Framwework</h3>
-                    <span class="project-tag">Materials Design</span>
-                    <span class="project-tag">Bayesian Optimization</span>
-                    <span class="project-tag">DoE</span>
+                    <h3>Molecular Voxelization Framework</h3>
+                    <span class="project-tag">Cheminformatics</span>
+                    <span class="project-tag">DFT</span>
+                    <span class="project-tag">Forever Chemicals</span>
                 </div>
-                <div class="card-body">
+                <!--<div class="card-body">
                     <p><strong>Goal:</strong> Reducing DFT costs in alloy design using Support Points (SP) sampling.</p>
                     
                     <div class="demo-area">
@@ -341,17 +362,28 @@
                         <button class="run-btn" style="width:100%" onclick="runAlloy()">Simulate Convergence Cost</button>
                         <div id="alloy-result" class="demo-result" style="text-align:center; border-top:none;">Lower bar = Better Efficiency</div>
                     </div>
+                </div>-->
+                <div class="card-body">
+                    <p>Feature Engineering molecular structure and subsequet chemical effects (including but not limited to defects) on a standardized grid.</p>
+                    
+                    <div style="margin-top: 1rem; border: 1px solid #ddd; border-radius: 4px; overflow: hidden;">
+                        <img src="images/voxmol.gif" alt="Forest Fire Simulation" style="width:100%; display:block;" onerror="this.src='https://via.placeholder.com/400x200?text=GIF+Not+Found'">
+                    </div>
+                    <p style="font-size: 0.8rem; text-align: center;">Actual input: Voxelized BCC SQS structure</p>
+                    <div class="links">
+                        <span><a href="">[Paper 1 : LeanCNNs]</a></span> <span><a href="">[Paper 2: PFAS Degradation]</a></span>
+                    </div>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-header">
-                    <h3>screenPFAS</h3>
-                    <span class="project-tag">Cheminformatics</span>
-                    <span class="project-tag">DFT</span>
-                    <span class="project-tag">Forever Chemicals</span>
+                    <h3>AI/ML-informed Multiscale Modeling</h3>
+                    <span class="project-tag">Materials Design</span>
+                    <span class="project-tag">Bayesian Optimization</span>
+                    <span class="project-tag">DoE</span>
                 </div>
-                <div class="card-body">
+                <!--<div class="card-body">
                     <p><strong>Goal:</strong> High-throughput screening of "forever chemicals" (PFAS) using ML descriptors.</p>
                     <p>This demo retrieves <strong>real DFT data</strong> from the project database (RAZA_DFT_DATABASE.json).</p>
                     
@@ -367,6 +399,17 @@
                         <div id="pfas-result" class="demo-result">Select a molecule to view DFT data.</div>
                     </div>
                     <p style="font-size: 0.8rem; margin-top: 10px;">*Data source: Uploaded JSON database.</p>
+                </div>-->
+                <div class="card-body">
+                    <p>Capturing multiscale phase-separation phenomena through calibration of coarse-grained force fields with ground truth all-atom molecular dynamic simulations</p>
+                    
+                    <div style="margin-top: 1rem; border: 1px solid #ddd; border-radius: 4px; overflow: hidden;">
+                        <img src="images/voxmol.gif" alt="Forest Fire Simulation" style="width:100%; display:block;" onerror="this.src='https://via.placeholder.com/400x200?text=GIF+Not+Found'">
+                    </div>
+                    <p style="font-size: 0.8rem; text-align: center;">Actual output: PDE Solver Timelapse</p>
+                    <div class="links">
+                        <span><a href="https://www.nature.com/articles/s41524-025-01729-9">[Paper 1: npj Comp.Mat.]</a></span> <span><a href="https://chemrxiv.org/engage/chemrxiv/article-details/69263681a10c9f5ca1c0700b">[Paper 2: chemRxiv]</a></span>
+                    </div>
                 </div>
             </div>
 
@@ -378,14 +421,13 @@
                     <span class="project-tag">Weather Agents</span>
                 </div>
                 <div class="card-body">
-                    <p>Comparing Partial Differential Equations (PDE) and Agent-Based Models (ABM) for fire spread simulation.</p>
-                    
+                    <p>Determining forest fire spread as a function of temp., wind, humidity and other conditions</p>
                     <div style="margin-top: 1rem; border: 1px solid #ddd; border-radius: 4px; overflow: hidden;">
-                        <img src="timelapse-actual.gif" alt="Forest Fire Simulation" style="width:100%; display:block;" onerror="this.src='https://via.placeholder.com/400x200?text=GIF+Not+Found'">
+                        <img src="images/timelapse-actual.gif" alt="Forest Fire Simulation" style="width:100%; display:block;" onerror="this.src='https://via.placeholder.com/400x200?text=GIF+Not+Found'">
                     </div>
                     <p style="font-size: 0.8rem; text-align: center;">Actual output: PDE Solver Timelapse</p>
                     <div class="links">
-                        <span>Contributors: S. Avasarala, X. An, P. Ray</span>
+                        <span><a href="">[Github Repo]</a></span>
                     </div>
                 </div>
             </div>
