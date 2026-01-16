@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranoy Ray | Computational Materials Scientist</title>
+    <link rel="icon" type="image/png" href="images/seal_icon.png">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NJT5EMVRDS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NJT5EMVRDS');
+    </script>
+
+    <style>
+        :root {
+            --primary: #003057; /* GT Navy */
+            --secondary: #B3A369; /* GT Gold */
+            --accent: #007bff;
+            --text: #333;
+            --light-bg: #f9f9f9;
+            --white: #ffffff;
+            --border: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        a { color: var(--primary); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+        a:hover { color: var(--secondary); text-decoration: underline; }
+
+        /* --- Header & Hero --- */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, #0056b3 100%);
+            color: var(--white);
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid var(--secondary);
+            object-fit: cover;
+            margin-bottom: 1rem;
+            background: white;
+        }
+
+        .hero-title { font-size: 2.5rem; margin: 0; font-weight: 700; }
+        .hero-subtitle { font-size: 1.1rem; opacity: 0.9; margin-top: 0.5rem; }
+        
+        .social-links { margin-top: 1rem; }
+        .social-links a {
+            color: var(--white);
+            background: rgba(255,255,255,0.2);
+            padding: 5px 12px;
+            border-radius: 15px;
+            margin: 0 5px;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+        .social-links a:hover { background: var(--secondary); color: var(--primary); text-decoration: none; }
+
+        /* --- Layout Containers --- */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .section {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        h2.section-title {
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 10px;
+            margin-top: 0;
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+
+        /* --- Interactive Demos Grid --- */
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .demo-card {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1.5rem;
+            background: #fff;
+            transition: transform 0.2s;
+        }
+        .demo-card:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        
+        .demo-box {
+            background: #f1f3f5;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        
+        /* --- Standard List Items (Experience, Education) --- */
+        .item-list { display: flex; flex-direction: column; gap: 1.5rem; }
+        
+        .item {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1.5rem;
+        }
+        .item:last-child { border-bottom: none; padding-bottom: 0; }
+
+        .item-logo {
+            width: 80px; /* Smaller Logos as requested */
+            height: auto;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+
+        .item-content { flex-grow: 1; }
+        .item-title { font-weight: 700; font-size: 1.1rem; color: var(--primary); margin: 0; }
+        .item-meta { font-size: 0.9rem; color: #666; font-style: italic; margin-bottom: 0.5rem; }
+
+        /* --- Gallery Grid --- */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-caption {
+            padding: 10px;
+            font-size: 0.85rem;
+            text-align: center;
+            background: #fff;
+            color: #555;
+        }
+
+        /* --- Buttons --- */
+        button.run-btn {
+            background: var(--secondary);
+            color: var(--primary);
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        button.run-btn:hover { background: #d4c17b; }
+
+        /* --- News Ticker --- */
+        .marquee-container {
+            background: #333;
+            color: white;
+            padding: 8px;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+        .marquee-container a { color: var(--secondary); }
+
+    </style>
+</head>
+<body>
+
+    <div class="marquee-container">
+        Actively seeking R&D/industrial-research/post-doc positions starting May 2026. 
+        Contact: <a href="mailto:pranoy@gatech.edu">pranoy@gatech.edu</a>
+    </div>
+
+    <header>
+        <img src="images/pr_colorado-circle-comp.png" alt="Pranoy Ray" class="profile-img">
+        <h1 class="hero-title">Pranoy Ray</h1>
+        <p class="hero-subtitle">PhD Candidate | Computational Materials Scientist | AI Engineer</p>
+        
+        <div class="social-links">
+            <a href="#research">Research</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="https://www.linkedin.com/in/pranoyr" target="_blank">LinkedIn</a>
+            <a href="https://github.com/pranoy-ray" target="_blank">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=SYuG3BUAAAAJ" target="_blank">Google Scholar</a>
+            <a href="docs/Pranoy_CV.pdf" target="_blank">Vitae (PDF)</a>
+        </div>
+        
+        <div style="margin-top: 15px;">
+            <a href="mailto:pranoy@gatech.edu" style="background:var(--secondary); color:var(--primary); padding:8px 16px; border-radius:20px; text-decoration:none; font-weight:bold;">Schedule a Meeting</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="section">
+            <p>
+                Ray is a Computational Materials Scientist and AI/ML Engineer with a dual background in Mechanical Engineering and Computational Science. Specialized in benchmarking and optimizing MLIPs and Bayesian frameworks for materials discovery, while deploying AI workflows (Lean CNNs) on HPC infrastructure.
+            </p>
+            <p>
+                Presently, he is a final year doctoral candidate at the <a href="https://mined.gatech.edu" target="_blank">MINED Group</a> in <a href="https://www.gatech.edu/">Georgia Tech</a> (advised by <a href="https://www.me.gatech.edu/faculty/kalidindi">Dr. Surya Kalidindi</a>).
+            </p>
+        </div>
+
+        <div class="section" id="demos">
+            <h2 class="section-title">Interactive Research Showcase</h2>
+            <p style="margin-bottom: 1.5rem;">Select a project to view live concept demos powered by real data from my repositories.</p>
+            
+            <div class="demo-grid">
+                
+                <div class="demo-card">
+                    <h3 style="margin:0; color:var(--primary)">screenPFAS</h3>
+                    <p style="font-size:0.9rem; color:#666;">High-throughput PFAS screening using DFT & ML.</p>
+                    <div class="demo-box">
+                        <select id="pfas-select" style="margin-bottom:10px; width:100%">
+                            <option value="PFOA">PFOA (C8F15O2)</option>
+                            <option value="PFHxS">PFHxS (C6F13O3S)</option>
+                        </select>
+                        <button class="run-btn" onclick="runPFAS()">Fetch DFT Data</button>
+                        <div id="pfas-result" style="margin-top:10px; font-family:monospace; min-height:40px;">Select molecule...</div>
+                    </div>
+                </div>
+
+                <div class="demo-card">
+                    <h3 style="margin:0; color:var(--primary)">AlloyDesignSP</h3>
+                    <p style="font-size:0.9rem; color:#666;">Efficient Alloy Design via Support Points.</p>
+                    <div class="demo-box">
+                        <div style="display:flex; height:60px; align-items:flex-end; gap:10px; margin-bottom:10px;">
+                            <div id="bar-rand" style="width:50%; background:#ccc; height:10%; transition:height 0.5s;"></div>
+                            <div id="bar-sp" style="width:50%; background:var(--secondary); height:10%; transition:height 0.5s;"></div>
+                        </div>
+                        <button class="run-btn" onclick="runAlloy()">Compare Efficiency</button>
+                        <div id="alloy-text" style="font-size:0.8rem; margin-top:5px;">Random vs. Support Pts</div>
+                    </div>
+                </div>
+
+                <div class="demo-card">
+                    <h3 style="margin:0; color:var(--primary)">ForestFiresModeling</h3>
+                    <p style="font-size:0.9rem; color:#666;">PDE vs Agent-Based Simulation.</p>
+                    <div style="margin-top:10px; border:1px solid #ddd;">
+                        <img src="timelapse-actual.gif" style="width:100%; display:block;" alt="Simulation GIF" onerror="this.src='https://via.placeholder.com/300x150?text=Load+GIF+Locally'">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">News</h2>
+            <ul style="padding-left: 20px;">
+                <li><strong>[Nov 2025]</strong> Journal article on Lean CNNs highlighted by TMS Editors as a standout article.</li>
+                <li><strong>[Aug 2025]</strong> Elected to the Emerging Leaders Advisory Board (ELAB @ GT).</li>
+                <li><strong>[Mar 2025]</strong> Named Woodruff School Fellow @ GT: Impactful Archival Journal Papers.</li>
+                <li><strong>[Jan 2024]</strong> Named Novelis Graduate Scholar 2024.</li>
+                <li><strong>[Aug 2023]</strong> Elected as the Internal VP of MEGA (Mechanical Engineering Graduate Association).</li>
+                <li><strong>[Dec 2022]</strong> Named EIIF 2022 Fellow : Invited Talk delivered @ 2nd EIIF (Oahu, Hawaii).</li>
+            </ul>
+        </div>
+
+        <div class="section" id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="item-list">
+                
+                <div class="item">
+                    <img src="images/gt.png" alt="GT Logo" class="item-logo">
+                    <div class="item-content">
+                        <h3 class="item-title">Doctor of Philosophy (PhD) in Mechanical Engineering</h3>
+                        <div class="item-meta">Georgia Institute of Technology | Aug 2021 - Present</div>
+                        <p>Advisor: <strong>Dr. Surya R. Kalidindi</strong>. Research: Materials Informatics & Bayesian Optimization.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/gt_coc_norm.png" alt="GT COC Logo" class="item-logo">
+                    <div class="item-content">
+                        <h3 class="item-title">Master of Science (MS) in Computational Science & Engineering</h3>
+                        <div class="item-meta">Georgia Institute of Technology | Jan 2023 - Dec 2024</div>
+                        <p>Minor: Materials Science and Engineering.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/nitd.png" alt="NIT Logo" class="item-logo">
+                    <div class="item-content">
+                        <h3 class="item-title">Bachelor of Technology (B.Tech) in Metallurgical Engineering</h3>
+                        <div class="item-meta">National Institute of Technology Durgapur, India | 2016 - 2020</div>
+                        <p>Graduated with First Class. Thesis on hypereutectic Al-17Si alloy.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Professional Certifications</h2>
+            <div class="item-list">
+                <div class="item">
+                    <img src="images/scheller.jpg" alt="Scheller" class="item-logo">
+                    <div class="item-content">
+                        <h3 class="item-title">Management of Technology (MOT)</h3>
+                        <div class="item-meta">Scheller College of Business, Georgia Tech | May 2025</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/tamu.png" alt="TAMU" class="item-logo">
+                    <div class="item-content">
+                        <h3 class="item-title">Computational Materials Science Summer School (CMS3)</h3>
+                        <div class="item-meta">Texas A&M University | July 2022</div>
+                        <p>CMS3 2022 Fellow (NSF).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="experience">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="item-list">
+                
+                <div class="item">
+                    <img src="images/gt.png" alt="GT" class="item-logo">
+                    <div class="item-content">
+                        <h3 class="item-title">Graduate Research Assistant</h3>
+                        <div class="item-meta">Georgia Institute of Technology | 2021 - Present</div>
+                        <p>Developing robust material P-S-P linkages using HPC and AI surrogates for DFT. Parallelizing code for supercomputers.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/multiscale.png" alt="Multiscale" class="item-logo">
+                    <div class="item-content">
+                        <h3 class="item-title">Data Science Manager / Materials Scientist</h3>
+                        <div class="item-meta">Multiscale Technologies Inc, Seattle | Jan 2024 - Aug 2024</div>
+                        <p>Developed AI-based Materials Design workflows for transnational clients.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/barc.png" alt="BARC" class="item-logo">
+                    <div class="item-content">
+                        <h3 class="item-title">Research Assistant</h3>
+                        <div class="item-meta">Bhabha Atomic Research Centre (BARC) | 2019 - 2021</div>
+                        <p>Predicted novel materials for Hydrogen Storage using DFT and AIMD simulations.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/iitb.png" alt="IITB" class="item-logo">
+                    <div class="item-content">
+                        <h3 class="item-title">Research Intern</h3>
+                        <div class="item-meta">IIT Bombay | 2020</div>
+                        <p>Materials Informatics using Random Forest algorithms for alloy property prediction.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/hal.png" alt="HAL" class="item-logo">
+                    <div class="item-content">
+                        <h3 class="item-title">Industrial Intern</h3>
+                        <div class="item-meta">Hindustan Aeronautics Limited (HAL) | 2018</div>
+                        <p>Quality control and defect identification in Foundry & Forge Division.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <ul style="columns: 2; -webkit-columns: 2; list-style-position: inside;">
+                <li><strong>AI/ML:</strong> PyTorch, GPyTorch, BoTorch, CNNs, Autoencoders, Normalizing Flows</li>
+                <li><strong>Simulation:</strong> VASP, LAMMPS, GROMACS, DFT, Molecular Dynamics</li>
+                <li><strong>Programming:</strong> Python, R, Java, C, Bash/Shell</li>
+                <li><strong>HPC/Cloud:</strong> MPI, AWS, Azure, SLURM/PBS</li>
+                <li><strong>Informatics:</strong> Bayesian Optimization, DoE, Active Learning</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Selected Awards</h2>
+            <ul>
+                <li><strong>[2025] Woodruff School Fellow</strong>: Georgia Tech.</li>
+                <li><strong>[2024] Novelis Graduate Scholar</strong>: Novelis Inc.</li>
+                <li><strong>[2022] EIIF Fellow</strong>: TokyoTech & Strategic Energy Institute.</li>
+                <li><strong>[2022] CMS3 Fellow</strong>: NSF + Texas A&M.</li>
+                <li><strong>[2018] Startup Feature</strong>: The Telegraph (India).</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Services to Community</h2>
+            <ul>
+                <li><strong>Reviewer:</strong> NeurIPS (AI4Materials), CVPR, SciPy Conference, J. Materials Science.</li>
+                <li><strong>Session Chair:</strong> Undergraduate Research Symposium, GT.</li>
+                <li><strong>Internal VP:</strong> MEGA (MechE Grad Association), GT.</li>
+                <li><strong>Contributor:</strong> JARVIS Project (NIST).</li>
+            </ul>
+        </div>
+
+        <div class="section" id="research">
+            <h2 class="section-title">Publications</h2>
+            <script src="https://bibbase.org/show?bib=https%3A%2F%2Fbibbase.org%2Fzotero-mypublications%2Fpranoyr&jsonp=1"></script>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Achievements & Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <a href="images/trinity.png" target="_blank"><img src="images/trinity.png" alt="Trinity College"></a>
+                    <div class="gallery-caption">Invited Seminar, Dublin (2025)</div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/novelis.jpg" target="_blank"><img src="images/novelis.jpg" alt="Novelis"></a>
+                    <div class="gallery-caption">Novelis Scholar's Day (2024)</div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/mst24.jpg" target="_blank"><img src="images/mst24.jpg" alt="MS&T Talk"></a>
+                    <div class="gallery-caption">TMS Fall Meeting (2024)</div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/TA.jpg" target="_blank"><img src="images/TA.jpg" alt="Teaching"></a>
+                    <div class="gallery-caption">AI for MechE Lecture (2023)</div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/HI.jpg" target="_blank"><img src="images/HI.jpg" alt="Hawaii"></a>
+                    <div class="gallery-caption">EIIF Talk, Hawaii (2022)</div>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/cessna.jpg" target="_blank"><img src="images/cessna.jpg" alt="Flying"></a>
+                    <div class="gallery-caption">Flying Cessna 172 (2022)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" style="text-align:center;">
+             <h2 class="section-title">Global Footprint</h2>
+             <img src="images/map2.png" style="max-width:100%; border-radius:4px;" alt="Map">
+             <p style="font-size:0.9rem; color:#666;">Places I have worked or collaborated.</p>
+        </div>
+
+    </div>
+
+    <footer style="background:#333; color:white; padding:2rem; text-align:center; margin-top:2rem;">
+        <p>&copy; 2026 Pranoy Ray</p>
+        <p><em>"Break the cycle, Morty. Rise above. Focus on Science."</em></p>
+        
+        <div style="margin-top:1rem; opacity:0.7;">
+            <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=cf069cd181c4a0f89af65f0aea11dca75d38c2cd'></script>
+            <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/828538/t/2"></script>
+        </div>
+    </footer>
+
+    <script>
+        // 1. screenPFAS Demo Logic (Real Data)
+        const pfasData = {
+            'PFOA': { formula: 'C8F15O2', enthalpy: '-1953.63 Ha', type: 'Perfluoroalkyl Acid' },
+            'PFHxS': { formula: 'C6F13O3S', enthalpy: '-2151.10 Ha', type: 'Sulfonic Acid' }
+        };
+
+        function runPFAS() {
+            const mol = document.getElementById('pfas-select').value;
+            const res = document.getElementById('pfas-result');
+            res.innerHTML = "Querying Database...";
+            setTimeout(() => {
+                const d = pfasData[mol];
+                res.innerHTML = `<strong>Formula:</strong> ${d.formula}<br><strong>Enthalpy:</strong> ${d.enthalpy}`;
+            }, 600);
+        }
+
+        // 2. AlloyDesign Demo Logic
+        function runAlloy() {
+            const barR = document.getElementById('bar-rand');
+            const barS = document.getElementById('bar-sp');
+            const txt = document.getElementById('alloy-text');
+            
+            txt.innerHTML = "Calculating...";
+            barR.style.height = "10%";
+            barS.style.height = "10%";
+            
+            setTimeout(() => {
+                barR.style.height = "90%"; // High cost
+                barS.style.height = "50%"; // Low cost
+                txt.innerHTML = "Result: Support Points require <strong>40% fewer</strong> samples.";
+            }, 600);
+        }
+    </script>
+
+</body>
+</html>
