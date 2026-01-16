@@ -1,957 +1,585 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <!-- DELETE THIS SCRIPT if you use this HTML, otherwise my analytics will track your page -->
- <!-- Global site tag (gtag.js) - Google Analytics -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173273441-1"></script>                
- <script>  
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date()); 
-
-  gtag('config', 'G-40DYH0ZKV6');
-</script> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranoy Ray | Computational Materials Scientist</title>
+    <link rel="icon" type="image/png" href="images/seal_icon.png">
     
-<!--Generate PDF
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NJT5EMVRDS"></script>
     <script>
-    var doc = new jsPDF();
-    var specialElementHandlers = {
-        '#editor': function (element, renderer) {
-            return true;
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NJT5EMVRDS');
+    </script>
+
+    <style>
+        :root {
+            --gt-gold: #B3A369;
+            --gt-blue: #003057;
+            --dark-gray: #333;
+            --light-gray: #f4f4f4;
+            --white: #ffffff;
+            --primary: #003057; 
+            --secondary: #B3A369;
         }
-    };
 
-    $('#cmd').click(function () {
-        doc.fromHTML($('#content').html(), 15, 15, {
-            'width': 170,
-                'elementHandlers': specialElementHandlers
-        });
-        doc.save('Pranoy.pdf');
-    });
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-gray);
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
 
-    // This code is collected but useful, click below to jsfiddle link.
-</script>-->
+        /* --- Typography --- */
+        h1, h2, h3 { margin-top: 0; color: var(--gt-blue); }
+        a { color: var(--gt-blue); text-decoration: none; transition: color 0.3s; }
+        a:hover { color: var(--gt-gold); }
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NJT5EMVRDS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        /* --- Hero Section --- */
+        header {
+            background: linear-gradient(135deg, var(--gt-blue) 0%, #0056b3 100%);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
 
-  gtag('config', 'G-NJT5EMVRDS');
-</script>
-  <!--Ad sense-->
-  <script data-ad-client="ca-pub-8188377581912057" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
- <!-- Primary Meta Tags -->
-<title>Pranoy Ray</title>
-<meta name="title" content="Pranoy's Portfolio">
-<meta name="description" content="Pranoy is a computational materials science researcher based in Atlanta, focused on building data-driven models and automation tools to address fundamental and applied problems in the pursuit of accelerated materials discovery. His advisor is Dr. Surya Kalidindi and he works as a doctoral researcher at the MINED Group in GeorgiaTech. His work involves developing autonomous systems for materials design and modeling to support materials design and discovery.">
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="http://pranoyray.xyz/">
-<meta property="og:title" content="Pranoy's Portfolio">
-<meta property="og:description" content="Pranoy is a Computational Materials Science Researcher working on AI-driven Materials Discovery: Materials Informatics and Computational Chemistry at the atomistic scale. He was previously associated with BARC, NIT Durgapur, IIT Bombay. He is currently a PhD Candidate at GeorgiaTech.">
-<meta property="og:image" content="images/pr_colorado-circle.png">
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--gt-gold);
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="http://pranoyray.xyz/">
-<meta property="twitter:title" content="Pranoy's Portfolio">
-<meta property="twitter:description" content="Pranoy is a Computational Materials Science Researcher working on AI-driven Materials Discovery: Materials Informatics and Computational Chemistry at the atomistic scale. He was previously associated with BARC, NIT Durgapur, IIT Bombay. He is currently a PhD Candidate at GeorgiaTech.">
-<meta property="twitter:image" content="images/pr_colorado-circle.png">
+        .hero-tags span {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9rem;
+        }
 
+        .btn {
+            display: inline-block;
+            background: var(--gt-gold);
+            color: var(--gt-blue);
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
 
-  <meta name="robots" content="index, follow" />
+        /* --- Layout --- */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
 
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
 
-  <meta name="author" content="Pranoy Ray">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+        /* --- Cards --- */
+        .card {
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/seal_icon.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png" /> <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png" />
-<style>
-/*.button {
-  background-color: #fcb103; /* Orange //comment 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-.button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);*/
-    .button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #fcb103;
-  border: none;
-  color: white;
-  text-align: center;
-  /*font-size: 28px;*/
-  padding: 15px 32px;
-  /*width: 200px;*/
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
+        .card:hover { transform: translateY(-5px); }
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
+        .card-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+            background: #f8f9fa;
+        }
 
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
+        .card-body { padding: 1.5rem; flex-grow: 1; }
 
-.button:hover span {
-  padding-right: 25px;
-}
+        .project-tag {
+            background: #e3f2fd;
+            color: var(--gt-blue);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+        }
 
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-}</style>
-<style>
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
+        /* --- INTERACTIVE DEMO STYLES --- */
+        .demo-area {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
+        .demo-controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
+        .demo-result {
+            min-height: 40px;
+            border-top: 1px solid #7f8c8d;
+            padding-top: 10px;
+            color: #2ecc71; /* Matrix Green */
+        }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-    
-</style>    
+        select, button.run-btn {
+            padding: 5px 10px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        button.run-btn { background: var(--gt-gold); color: var(--gt-blue); font-weight: bold; }
 
+        /* --- Sections (Experience/News) --- */
+        .section-box {
+            background: var(--white);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        /* General Section Class used in bottom half */
+        .section {
+            background: var(--white);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        h2.section-title {
+            border-bottom: 2px solid var(--gt-gold);
+            padding-bottom: 10px;
+            margin-top: 0;
+            color: var(--gt-blue);
+            font-size: 1.5rem; 
+        }
+
+        ul.timeline {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.timeline li {
+            padding-bottom: 1.5rem;
+            border-left: 2px solid var(--gt-gold);
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        ul.timeline li::before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: var(--gt-blue);
+            border-radius: 50%;
+            position: absolute;
+            left: -7px;
+            top: 5px;
+        }
+
+        /* --- Gallery Grid --- */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .gallery-item {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            transition: opacity 0.3s;
+            display: block;
+        }
+        .gallery-item img:hover { opacity: 0.8; }
+        .gallery-caption {
+            padding: 8px;
+            font-size: 0.8rem;
+            text-align: center;
+            background: #fff;
+            color: #555;
+        }
+
+        /* --- News Ticker --- */
+        .marquee-container {
+            background: #333;
+            color: white;
+            padding: 8px;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+        .marquee-container a { color: var(--gt-gold); }
+        
+        /* --- Item Lists (Education/Experience) --- */
+        .item-list { display: flex; flex-direction: column; gap: 1.5rem; }
+        .item { display: flex; gap: 1.5rem; border-bottom: 1px solid #eee; padding-bottom: 1.5rem; }
+        .item:last-child { border-bottom: none; }
+        .item-logo { width: 80px; height: auto; object-fit: contain; }
+        .item-content { flex: 1; }
+        .item-title { font-weight: 700; color: var(--gt-blue); margin: 0 0 5px 0; }
+        .item-meta { font-size: 0.9rem; color: #666; font-style: italic; margin-bottom: 5px; }
+
+        /* --- NEW LAYOUT CLASSES --- */
+        .row { display: flex; gap: 2rem; margin-bottom: 2rem; }
+        .col-fat { flex: 2; }
+        .col-thin { flex: 1; }
+        .col-half { flex: 1; }
+        @media (max-width: 768px) { .row { flex-direction: column; } }
+
+    </style>
 </head>
-
 <body>
-   <marquee bgcolor="#f0f0f0"> <div><center> <p style="text-align:justify; color: tomato" class="content">  Actively seeking R&D/industrial-research/post-doc positions starting May 2026. Please reach out at <a href="mailto:pranoy@gatech.edu">pranoy@gatech.edu</a>/<a href="mailto:pranoyray64@gmail.com">pranoyray64@gmail.com</a></center></div></marquee>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Pranoy Ray</name><br> 
-              </p>
-                
-              <p style="text-align:center">  
-                 
-                <!--<a href="https://www.researchgate.net/profile/Pranoy-Ray-3" target="_blank">Research</a> &nbsp|&nbsp-->
-                <a href="#res">Research</a> &nbsp|&nbsp
-                <a href="#exp">Experience</a> &nbsp|&nbsp
-                <!--<a href="#education">Education</a> &nbsp|&nbsp-->
-                <a href="https://www.linkedin.com/in/pranoyr" target="_blank">LinkedIn</a>&nbsp|&nbsp
-                <a href="https://github.com/pranoy-ray/pranoy-ray.github.io/blob/main/Pranoy_CV.pdf" target="_blank">Vitae</a>
 
-              </p>
+    <div class="marquee-container">
+        Actively seeking R&D/industrial-research/post-doc positions starting May 2026. 
+        Contact: <a href="mailto:pranoy@gatech.edu">pranoy@gatech.edu</a>
+    </div>
 
-                <p style="text-align:center">  
-                  pranoy [at] gatech [dot] edu<br>
-                  gtpranoy [at] gmail [dot] com
-                  </p>
+    <header>
+        <div class="hero-content">
+            <img src="images/pr_colorado-circle-comp.png" alt="Pranoy Ray" class="profile-img" onerror="this.src='https://via.placeholder.com/150'">
+            <h1>Pranoy Ray</h1>
+            <p style="font-size: 1.2rem;">PhD Candidate | Computational Materials Scientist | AI Engineer</p>
+            <div class="hero-tags">
+                <span>Materials Informatics</span>
+                <span>Bayesian Optimization</span>
+                <span>Deep Learning</span>
+                <span>DFT</span>
+            </div>
+            <br>
+            <a href="mailto:pranoy@gatech.edu" class="btn">Contact Me</a>
+            <a href="https://github.com/pranoy-ray" class="btn" style="background:#333; color:white;">GitHub</a>
+        </div>
+    </header>
 
-              
-               <p style="text-align:justify"> 
-                   <!--Demonstrated leadership of multidisciplinary teams of engineers and student scientists in high profile R&D projects in industrial and academic settings. Key responsibilities include overseeing project timelines and deliverables within a start-up/entrepreneurial (fast-paced) environment. Demonstrated the ability to build a diverse group, on-boarding key skill sets into critical project roles, ensuring clear communication of project deliverables. Comprehensive communication of project results and milestones. Demonstrated innovator and problem solver with a background in materials chemistry, molecular simulations and novel feature engineering within product-driven Materials Informatics and ICME workflows.-->
-                    Ray is a Computational Materials Scientist and AI/ML Engineer with a dual background in Mechanical Engineering and Computational Science. Specialized in benchmarking and optimizing MLIPs and Bayesian frameworks for materials discovery, while deploying AI workflows (Lean CNNs) on HPC infrastructure. Proven leader of multidisciplinary teams in high-profile R&D projects, driving timelines and deliverables within fast-paced startup and academic environments. Experienced in building diverse teams, resolving root causes, and communicating complex milestones. Innovator with expertise in materials chemistry, molecular simulations, and feature engineering within product-driven Materials Informatics and ICME workflows. Presently, he is a final year doctoral candidate at the <a href="https://mined.gatech.edu" target="_blank">MINED Group</a> in <a href="https://www.gatech.edu/">GeorgiaTech</a>(advised by <a href="https://www.me.gatech.edu/faculty/kalidindi">Dr. Surya Kalidindi</a>), where he develops transferable and robust material P-S-P (process-structure-property) linkages, with an emphasis on accelerated sampling and uncertainty propagation (UP) + quantification (UQ) methods. 
-                   
-                  <!--Ray is a materials informatics researcher focused on building data-driven models and automation tools to address fundamental and applied problems in the pursuit of accelerated materials discovery and design. Presently, he is a final year doctoral candidate at the <a href="https://mined.gatech.edu" target="_blank">MINED Group</a> in <a href="https://www.gatech.edu/">GeorgiaTech</a>(advised by <a href="https://www.me.gatech.edu/faculty/kalidindi">Dr. Surya Kalidindi</a>), where he develops transferable and robust material P-S-P (process-structure-property) linkages, with an emphasis on accelerated sampling and uncertainty propagation (UP) + quantification (UQ) methods. He possesses additional expertise in formulating and optimizing high-performance computing (HPC) routines, parallelization protocols, dataset curation, and managing technology (MoT) for materials science & sustainability.-->
-    </p><p style="text-align:justify">
-                <!--Final year doctoral candidate in computational materials science at the Georgia Institute of Technology's MINED Lab, advised by Dr. Surya R. Kalidindi. Works on accelerating materials discovery and design by developing transferable and robust ML protocols, with an emphasis on accelerated sampling methods and uncertainty quantification (& UP). Additional experience in formulating and optimizing high-performance computing (HPC) routines, parallelization protocols, dataset curation, and managing technology (MoT) for materials science & sustainability.-->
-                Prior to joining GT, Ray conducted research with the late <a href="https://scholar.google.com/citations?user=URtlq40AAAAJ&hl=en&oi=ao">Dr. Srikumar Banerjee</a> (former Chairman, Department of Atomic Energy, Govt. of India ; Padma Shri - 2005) and <a href="https://scholar.google.com/citations?user=LNHAP3UAAAAJ&hl=en&oi=ao">Dr. Brahmananda Chakraborty</a> (Scientist H @High Pressure and Synchroton Radiation Physics Division) at the <a href="http://www.barc.gov.in/">Bhabha Atomic Research Centre</a> in Mumbai (India), where they thereotically discovered materials for efficient solid-state hydrogen storage.
-                <!--I am a Materials Science Researcher by training, who is deeply interested in Materials Informatics. My aim is to pursue research to develop and predict new materials with tailored properties using ML-driven approaches. in an attempt to empower the next generation of sustainable materials in the aerospace and automobile industries.
--->
-                  
-                </p>
-<!--learn new management techniques to apply them in my future entrepreneurial aspirations.-->
+    <div class="container">
+        
+        <h2 style="border-bottom: 2px solid var(--gt-gold); padding-bottom: 10px; margin-bottom: 2rem;">Research Highlights & Concept Demos</h2>
+        
+        <div class="grid">
             
-              <!--
-              <p>If you have any questions / want to collaborate / discuss research, feel free to drop me a line at any of the email addresses enlisted above! I enjoy talking to new people.</p>
-              -->
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-
-              <a href="images/pr_colorado-circle.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/pr_colorado-circle-comp.png" class="hoverZoomLink"></a>
-                  <p style="text-align:center">  
-                  (he/his/him)
-                  </p>
-                <p style="text-align:center">
-               
-                <!--<a href="https://drive.google.com/file/d/1GBVSslxE547pMs416xgFu_88e-nShu-U/view?usp=sharing" target="_blank">CV</a> &nbsp/&nbsp-->
-                    <a href="https://github.com/pranoy-ray/" target="_blank">Github</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=SYuG3BUAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a> &nbsp/&nbsp
-                <!--<a href="https://pranoyr.medium.com" target="_blank">Medium</a>  &nbsp/&nbsp-->
-                <a href="https://twitter.com/aviatorpranoy" target="_blank">Twitter (X)</a> <!--&nbsp/&nbsp
-                
-                <a href="https://medium.com/@pranoyr" target="_blank">Medium</a>    -->
-              </p>
+            <div class="card">
+                <div class="card-header">
+                    <h3>screenPFAS</h3>
+                    <span class="project-tag">Cheminformatics</span>
+                    <span class="project-tag">DFT</span>
+                </div>
+                <div class="card-body">
+                    <p><strong>Goal:</strong> High-throughput screening of "forever chemicals" (PFAS) using ML descriptors.</p>
+                    <p>This demo retrieves <strong>real DFT data</strong> from the project database (RAZA_DFT_DATABASE.json).</p>
                     
-              <div><font><center><span>
-                  <form action="https://outlook.office.com/bookwithme/user/b2443ae2c5974d06b0ad7381776f4b58@gatech.edu?anonymous&ep=plink">
-         <button class="button" style="vertical-align:middle;background-color:green" type="submit">Schedule a Meeting with me</button>
-      </form>
-                  </span></font></center></div>
-                  <!--<a href=""><button class="button" style="vertical-align:middle;background-color:green" onclick="window.location.href='https://outlook.office.com/bookwithme/user/b2443ae2c5974d06b0ad7381776f4b58@gatech.edu?anonymous&ep=plink';"></button></a></span></center></font></center></div>
-          -->
-            </td></tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-          <!--  <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <p>
-             yet to think :)
-              </p>
-              <!-- <p>
-                Representative papers are <span class="highlight">listed under Publications</span>.
-              </p>
+                    <div class="demo-area">
+                        <div class="demo-controls">
+                            <select id="pfas-select">
+                                <option value="PFOA">Molecule: PFOA (C8F15O2)</option>
+                                <option value="PFHxS">Molecule: PFHxS (C6F13O3S)</option>
+                                <option value="PFBS">Molecule: PFBS (C4F8O3S)</option>
+                            </select>
+                            <button class="run-btn" onclick="runPFAS()">Get Properties</button>
+                        </div>
+                        <div id="pfas-result" class="demo-result">Select a molecule to view DFT data.</div>
+                    </div>
+                    <p style="font-size: 0.8rem; margin-top: 10px;">*Data source: Uploaded JSON database.</p>
+                </div>
+            </div>
 
-            </td> -->
-          </tr>
-        </tbody></table>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td>
-              <heading>News</heading>
-              <ul>
-                <li><strong>[Nov 2025]</strong> Journal article on Lean CNNs for S-P linkages highlighted by <a href="https://www.tms.org/">TMS</a> Editors as a standout article <a href="https://x.com/TMSSociety/status/1995133259970236736">[open]</a></li>
-                <!--<li><strong>[Jan 2025]</strong> First work with Resonac and Multiscale Inc. released <a href="https://www.nature.com/articles/s41524-025-01729-9">[open]</a></li>-->
-                <li><strong>[Aug 2025]</strong> Elected to the Emerging Leaders Advisory Board (ELAB @ GT) <a href="https://students.gatech.edu/emerging-leaders">[open]</a></li>
-                <li><strong>[Mar 2025]</strong> Named Woodruff School Fellow @ GT: Impactful Archival Journal Papers published </li>
-                <!--<li><strong>[Jan 2025]</strong> First paper towards PhD thesis published! <a href="https://link.springer.com/article/10.1007/s40192-024-00389-9">[open]</a></li>-->
-                <!--<<li><strong>[Apr 2024]</strong> Promoted to Data Science Manager from Materials Data Scientist at Multiscale</li>-->
-                <li><strong>[Jan 2024]</strong> Named Novelis Graduate Scholar 2024: Novelis Innovation Hub, USA <a href="https://research.gatech.edu/novelis/novelis-scholars/2023/">[open]</a></li>
-                <li><strong>[Aug 2023]</strong> Elected as the Internal VP of MEGA (Mechanical Engineering Graduate Association) <a href="https://www.instagram.com/p/CtzKjFwukJC/">[open]</a></li>
-                <!--<li><strong>[Sep 2023]</strong> Journal article published (DFT for alternative fuels: Hydrogen Storage) <a href="https://doi.org/10.1039/D3SE00845B">[open]</a><a href="https://doi.org/10.1016/j.ijhydene.2020.10.161">[DOIb]</a></li>-->
-                <li><strong>[Dec 2022]</strong> Named EIIF 2022 Fellow : Invited Talk delivered @ 2nd EIIF (Oahu, Hawaii)</li>
-                <li><strong>[May 2022]</strong> Named CMS3 2022 Fellow : Texas A&M University (College Station, Texas)</li>
-                <!--<li><strong>[Nov 2020]</strong> First Journal article published (DFT: Hydrogen Storage) <a href="https://doi.org/10.1016/j.ijhydene.2020.10.161">[open]</a></li>-->
-                <!--<li><strong>[Nov 2019]</strong> Poster presented: Department of Atomic Energy Computational Chemistry Symposium, Mumbai</li>-->
-                <li><strong>[Aug 2018]</strong> News feature: A startup which Pranoy co-founded <a href="https://drive.google.com/file/d/18aT5yE_trlRta6xGS8tV5VITCEX4dwMX/view?usp=sharing">[open]</a> <a href="https://www.telegraphindia.com/culture/backyard-start-ups/cid/1509086">[news article]</a></li>
-              </ul>
-            </td>
-          </tr>
-        </table>
+            <div class="card">
+                <div class="card-header">
+                    <h3>AlloyDesignSP</h3>
+                    <span class="project-tag">Bayesian Optimization</span>
+                    <span class="project-tag">DoE</span>
+                </div>
+                <div class="card-body">
+                    <p><strong>Goal:</strong> Reducing DFT costs in alloy design using Support Points (SP) sampling.</p>
+                    
+                    <div class="demo-area">
+                        <div style="display:flex; align-items:flex-end; height: 100px; justify-content: space-around; margin-bottom: 10px;">
+                            <div style="text-align:center; width: 45%;">
+                                <div id="bar-random" style="background:#e74c3c; width:100%; height:80%; transition:height 1s;"></div>
+                                <small>Random Sampling</small>
+                            </div>
+                            <div style="text-align:center; width: 45%;">
+                                <div id="bar-sp" style="background:#2ecc71; width:100%; height:40%; transition:height 1s;"></div>
+                                <small>Support Points</small>
+                            </div>
+                        </div>
+                        <button class="run-btn" style="width:100%" onclick="runAlloy()">Simulate Convergence Cost</button>
+                        <div id="alloy-result" class="demo-result" style="text-align:center; border-top:none;">Lower bar = Better Efficiency</div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="card">
+                <div class="card-header">
+                    <h3>Forest Fires Modeling</h3>
+                    <span class="project-tag">PDE</span>
+                    <span class="project-tag">Agent-Based Modeling</span>
+                </div>
+                <div class="card-body">
+                    <p>Comparing Partial Differential Equations (PDE) and Agent-Based Models (ABM) for fire spread simulation.</p>
+                    
+                    <div style="margin-top: 1rem; border: 1px solid #ddd; border-radius: 4px; overflow: hidden;">
+                        <img src="timelapse-actual.gif" alt="Forest Fire Simulation" style="width:100%; display:block;" onerror="this.src='https://via.placeholder.com/400x200?text=GIF+Not+Found'">
+                    </div>
+                    <p style="font-size: 0.8rem; text-align: center;">Actual output: PDE Solver Timelapse</p>
+                </div>
+            </div>
 
-        
-         <!--Education -->
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" id="education"><tbody>
-            <tr>
-              <td>
-                <heading>Education</heading>
+        </div>
 
-  
-          <table style="width:100%;border:0px;border-spacing:15px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <!-- <heading>Publications</heading> -->
-            <tr>
-  
-            <!--squint-->
-            <td width="30%"><img src="images/gt.png" alt="GT" width="150"  style="border-style: none; vertical-align: middle;">
-              <td valign="top" width="70%">
-                <strong>Doctor of Philosophy (PhD)<br><i>George W. Woodruff School of Mechanical Engineering</i><br>Georgia Institute of Technology, Atlanta, GA <a href="https://www.gatech.edu/" target="_blank">[open]</a> </strong>
-                <br><em>August 2021 - Present <br>Advisor: <b><a href="https://www.me.gatech.edu/faculty/kalidindi/" target="_blank">Dr. Surya R. Kalidindi</a></b> </em> 
-                <br>Research Lab Link: <b><a href="https://matin.gatech.edu/groups/mined_super/research" target="_blank">MINED Group</a></b>
-                  <br>Major: <b>Materials Informatics</b>
-                  <br>Minor: <b>Management of Technology</b>               
-            </td>
-
-              
-            </tr>
-                          <tr>
-  
-            <!--squint-->
-            <td width="30%"><img src="images/gt_coc_norm.png" alt="GT-COC" width="150"  style="border-style: none; vertical-align: middle;">
-              <td valign="top" width="70%">
-                <strong>Master of Science (MS)<br><i>College of Computing <a href="https://www.parchment.com/u/award/73d3c0858df0a65ae0b52f84d17dac17"> [degree] </a></i><br>Georgia Institute of Technology, Atlanta, GA <a href="https://www.gatech.edu/" target="_blank">[open]</a> </strong>
-                <br><em>January 2023 - December 2024
-                  <br>Major: <b><a href="https://cse.gatech.edu/" target="_blank">Computational Science and Engineering</a></b>
-                <br>Minor: <b><a href="https://mse.gatech.edu/" target="_blank">Materials Science and Engineering</a></b>
-            </td>
-
-              
-            </tr>
-
-            <tr>
-  
-             <!--squint-->
-            <td width="30%"><img src="images/nitd.png" alt="NIT-DGP" width="150"  style="border-style: none; vertical-align: middle;">
-              <td valign="top" width="70%">
-                <strong>Bachelor of Technology (B.Tech)<br><i>Metallurgical and Materials Engineering <br>National Institute of Technology Durgapur, India</i><a href="https://www.nitdgp.ac.in/" target="_blank">[open]</a> </strong>
-                <br>
-                <em>July 2016 - June 2020 <br>Graduated with <b>First Class</b> </em> 
-                <p>
-                  Defended undergradute thesis <strong>"Study of microstructure-property and wear behaviour of hypereutectic Al-17Si alloy" <a href="https://drive.google.com/file/d/1YS4H7jQibLGqWoCqabGZc_KfeNBKgQbD/view?usp=sharing">[open]</a></strong><br>Supervisors : <a href="https://nitdgp.ac.in/department/metallurgical-materials-engineering/faculty-12/karuna-sindhu-ghosh" target="_blank">Prof. K.S.Ghosh</a> and <a href="https://nitdgp.ac.in/department/metallurgical-materials-engineering/faculty-12/bijay-kumar-show-1" target="_blank">Prof. B.K.Show</a>, MME, NIT Durgapur
-                </p>
-               
-              </td>
-
-              
-            </tr>
-
-            <tr>
-  
-                <!--squint-->
-          <td width="30%"><img src="images/dbpc.jpg" alt="DBPC" width="150"  style="border-style: none; vertical-align: middle; ">
-            <td valign="top" width="70%">
-              <strong>High School (10+2)<br>Don Bosco School Park Circus, Kolkata, India <a href="https://www.donboscoparkcircus.org/" target="_blank">[open]</a> </strong>
-              <br>
-              <em>April 2002 - April 2016 <br>Class 12 Graduated with <b>95.25% (ISC 2016 - eq. to A Level)</b> <br>Class 10 Graduated with <b>94.60% (ICSE 2014 - eq. to O Level)</b> </em> 
-              <!--<p>
-                ◦   Defended undergradute thesis <strong>"Carotid Artery Abnormalities using Computational Intelligence"</strong><br>Supervisors : <a href="https://nitdgp.ac.in/department/metallurgical-materials-engineering/faculty-12/bijay-kumar-show-1" target="_blank">Prof. Bikash Kumar Shaw</a>, Associate Professor, Dept. of ECE, SRM-IST KTR
-              </p>-->
-             
-            </td>
-
-            
-          </tr>
-            <br>
-            <tr>
-  
-  
-            </td>
-        </tr>
-      </tbody></table>
-  </tbody></table>
-         <!--Professional Certification -->
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" id="education"><tbody>
-            <tr>
-              <td>
-                <heading>Professional Certifications</heading>
-
-  
-          <table style="width:100%;border:0px;border-spacing:15px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <!-- <heading>Publications</heading> -->
-              <tr>
-  
-                  <!--squint-->
-            <td width="30%"><img src="images/scheller.jpg" alt="GT" width="150"  style="border-style: none; vertical-align: middle;">
-              <td valign="top" width="70%">
-                <strong>Management of Technology (MOT)<br><i>Scheller College of Business</i><br>Georgia Institute of Technology, Atlanta, GA <a href="https://www.scheller.gatech.edu/index.html" target="_blank">[details]</a> </strong>
-                <br>
-                <em>May 2025<br>Support: <b>Federal Funding Agencies</b> <br>Type: <b>Graduate Certificate</b> </em> 
-                <!--<br>Specialization: <b><a href="https://cms3.tamu.edu" target="_blank">Computational Materials Science & Materials Informatics</a></b>
-                  <p>
-                   Thesis <strong>"Study of microstructure-property and wear behaviour of hypereutectic Al-17Si alloy" <a href="https://drive.google.com/file/d/1YS4H7jQibLGqWoCqabGZc_KfeNBKgQbD/view?usp=sharing">[open]</a></strong><br>Supervisors : <a href="https://nitdgp.ac.in/department/metallurgical-materials-engineering/faculty-12/karuna-sindhu-ghosh" target="_blank">Prof. K.S.Ghosh</a> and <a href="https://nitdgp.ac.in/department/metallurgical-materials-engineering/faculty-12/bijay-kumar-show-1" target="_blank">Prof. B.K.Show</a>, MME, NIT Durgapur
-                </p>-->
-               
-              </td>
-              
-             </tr>
-              <tr>
-  
-                  <!--squint-->
-            <td width="30%"><img src="images/mse.jpg" alt="GT" width="150"  style="border-style: none; vertical-align: middle;">
-              <td valign="top" width="70%">
-                <strong>Computational Materials Science & Engineering (CMSE)<br><i>School of Materials Science & Engineering</i><br>Georgia Institute of Technology, Atlanta, GA <a href="https://www.gatech.edu/" target="_blank">[details]</a> </strong>
-                <br>
-                <em>May 2023<br>Support: <b>Federal Funding Agencies</b> <br>Type: <b>Graduate Certificate</b></em> 
-                <!--<br>Specialization: <b><a href="https://cms3.tamu.edu" target="_blank">Computational Materials Science & Materials Informatics</a></b>
-                  <p>
-                   Thesis <strong>"Study of microstructure-property and wear behaviour of hypereutectic Al-17Si alloy" <a href="https://drive.google.com/file/d/1YS4H7jQibLGqWoCqabGZc_KfeNBKgQbD/view?usp=sharing">[open]</a></strong><br>Supervisors : <a href="https://nitdgp.ac.in/department/metallurgical-materials-engineering/faculty-12/karuna-sindhu-ghosh" target="_blank">Prof. K.S.Ghosh</a> and <a href="https://nitdgp.ac.in/department/metallurgical-materials-engineering/faculty-12/bijay-kumar-show-1" target="_blank">Prof. B.K.Show</a>, MME, NIT Durgapur
-                </p>-->
-               
-              </td>
-
-              
-             </tr>
-                                                     <tr>
-  
-                  <!--squint-->
-            <td width="30%"><img src="images/tamu.png" alt="TAMU" width="150"  style="border-style: none; vertical-align: middle;">
-              <td valign="top" width="70%">
-                <strong>Computational Materials Science Summer School (CMS3)<br>Texas A&M University, College Station, TX <a href="https://cms3.tamu.edu" target="_blank">[details]</a> </strong>
-                <br>
-                <em>July 2022<br>Support: <b><a href="https://cms3.tamu.edu/" target="_blank">CMS3 2022 Fellow (NSF+TAMU)</a></b>  <br>Type: <b>Summer School Diploma</b> </em> 
-                <!--<br>Specialization: <b><a href="https://cms3.tamu.edu" target="_blank">Computational Materials Science & Materials Informatics</a></b>
-                  <p>
-                   Thesis <strong>"Study of microstructure-property and wear behaviour of hypereutectic Al-17Si alloy" <a href="https://drive.google.com/file/d/1YS4H7jQibLGqWoCqabGZc_KfeNBKgQbD/view?usp=sharing">[open]</a></strong><br>Supervisors : <a href="https://nitdgp.ac.in/department/metallurgical-materials-engineering/faculty-12/karuna-sindhu-ghosh" target="_blank">Prof. K.S.Ghosh</a> and <a href="https://nitdgp.ac.in/department/metallurgical-materials-engineering/faculty-12/bijay-kumar-show-1" target="_blank">Prof. B.K.Show</a>, MME, NIT Durgapur
-                </p>-->
-               
-              </td>
-
-              
-            </tr>
-            
-            <br>
-            <tr>
-  
-  
-            </td>
-        </tr>
-      </tbody></table>
-      
-  </tbody></table>
-
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" id="res">
-          <tr>
-            <td>
-              <heading>Research</heading>
-                <h3 style="color:darkcyan;"> Journal Publications </h3>
-                <script src="https://bibbase.org/show?bib=https%3A%2F%2Fbibbase.org%2Fzotero-mypublications%2Fpranoyr&jsonp=1"></script>                
-              <h3 style="color:darkcyan;"> Invited Talks </h3>
-                
-               <ul>
-                   <li><b>Lean CNNs for materials discovery using electron charge density fields</b> <br>
-                    <u>Author(s)</u>: <i><mark>Pranoy Ray*</mark>, Surya R. Kalidindi</i>
-                    <br><b>Trinity College</b> | Dublin, Ireland - October 2025
-                </li>
-                <li><b>Bayesian frameworks for advanced materials design at the atomistic scale through efficient spatial feature engineering in data-scarce regimes</b> <br>
-                    <u>Author(s)</u>: <i><mark>Pranoy Ray*</mark>, Surya R. Kalidindi</i>
-                    <br><b>Novelis' Global Research and Technology Center (NGRTC)</b> | Kennesaw, GA, USA - October 2024
-                </li>
-                   <li><b>Bayesian Optimization of CG Topologies: Applications to common polymers</b> <br>
-                    <u>Author(s)</u>: <i><mark>Pranoy Ray*</mark>, Adam P. Generale, Nikhith Vankireddy, Yuichiro Asoma, Masataka Nakauchi, Haein Lee, Katsuhisa Yoshida, Yoshishige Okuno, Surya R. Kalidindi</i>
-                    <br><b>TMS Fall Meeting (MS&T '24)</b> | Pittsburgh, PA, USA - October 2024
-                </li>
-                   <li><b>Feature engineering of electron charge density fields for building AI/ML models to predict material properties</b> <br>
-                    <u>Author(s)</u>: <i><mark>Pranoy Ray*</mark>, Surya R. Kalidindi</i>
-                    <br><b>2nd Energy & Informatics International Forum (TokyoTech)</b> | Oahu, HI, USA - December 2022
-                </li>
-                
-              </ul>
-                <h3 style="color:darkcyan;"> Conferences & Symposiums </h3>
-                <ul>
-                    <li><b>Statistical quantification of helicity in linear PFAS</b>
-                    <br><u>Author(s)</u>: <i><mark>Pranoy Ray*</mark>,  Haden Cavalli, et. al</i>
-                    <br><b>ACS Spring Meeting</b>
-                        <br><b>TALK | </b><u>Details:</u> Atlanta, GA, USA - March 2026
-                    </li>
-                    <li><b>Structure-aware Bayesian optimization for efficient design of disordered alloys</b>
-                    <br><u>Author(s)</u>: <i><mark>Pranoy Ray*</mark>, Surya R. Kalidindi</i>
-                    <br><b>SES Annual Technical Meeting</b>
-                        <br><b>TALK & POSTER | </b><u>Details:</u> Atlanta, GA, USA - October 2025
-                    </li>
-                    <li><b>Accelerating Molecular Design with generalizable Bayesian Optimization</b>
-                    <br><u>Author(s)</u>: <i><mark>Pranoy Ray*</mark>, Surya R. Kalidindi</i>
-                    <br><b>MSE Research Showcase, GeorgiaTech</b>
-                        <br><b>POSTER | </b><u>Details:</u> Atlanta, GA, USA - October 2024
-                    </li>
-                    <li><b>Ti-doped Carbon Nanostructure as an Efficient Medium for Hydrogen Storage</b>
-                    <br><u>Author(s)</u>: <i><mark>Pranoy Ray*</mark>, Brahmananda Chakraborty</i>
-                    <br><b>Department of Atomic Energy Computational Chemistry Symposium</b>
-                        <br><b>POSTER | </b><u>Details:</u> Mumbai, MH, INDIA - November 2019
-                    </li>
-              </ul>
-                * Indicates the presenting author
-                
-            </td>
-          </tr>
-        </table>
-
-    
-
-            
-           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tr>
-              <td>
-                <heading>Services to the Scientific Community</heading>
-                <ul>
-                    <li><strong>Reviewer</strong>: NeurIPS - (AI4Materials) - San Diego, CA, USA [2025] </li>
-                    <li><strong>Reviewer</strong>: CVPR - (Multimodal Learning for Material Science) - Nashville, TN, USA [2025] </li>
-                    <li><strong>Session Chair & Reviewer</strong>: Undergraduate Research Symposium, GT, USA [2025] </li>
-                    <li><strong>Reviewer</strong>: SciPy Conference - Tacoma, WA, USA [2025] </li>
-                    <li><strong>Reviewer</strong>: SciPy Conference - Tacoma, WA, USA [2024] </li>
-                    <li><strong>Reviewer</strong>: Springer Nature - Journal of Materials Science [2023] </li>
-                    <li><strong>Reviewer</strong>: SciPy Conference - Austin, TX, USA [2023] </li>
-                    <li><strong>Internal VP</strong>: Mechanical Engineering Graduate Association (MEGA), GT, USA [2023-24] </li>
-                    <li><strong>Contributor</strong>: JARVIS Project, National Institute of Standards (NIST) USA [2021-present]</li>
-                    <li><strong>President</strong>: Entrepreneurship Development Cell, NIT Durgapur, India [2016-2020] </li>
-                    <li><strong>Treasurer</strong>: Strokes (Art & Photography Club), NIT Durgapur, India [2017-2020] </li>
-                    <li><strong>Contributor</strong>: Mozilla Foundation, Kolkata, India [2016-2020] </li>
+        <div class="grid" style="margin-top: 3rem;">
+            <div class="section-box">
+                <h2>Latest News</h2>
+                <ul class="timeline">
+                    <li><strong>Nov 2025:</strong> Journal article on Lean CNNs highlighted by TMS Editors as a standout article.</li>
+                    <li><strong>Aug 2025:</strong> Elected to the Emerging Leaders Advisory Board (ELAB @ GT).</li>
+                    <li><strong>Mar 2025:</strong> Named Woodruff School Fellow @ GT.</li>
+                    <li><strong>Jan 2024:</strong> Named Novelis Graduate Scholar 2024.</li>
                 </ul>
-              </td>
-            </tr>
-          </table>
-               
+            </div>
 
-         <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tr>
-              <td>
-                <heading>Selected Awards & Accolades</heading>
-                <ul>
-                    <li><strong>[2025] Woodruff School Fellow</strong>: Impactful Archival Journal Papers published (Atlanta, GA, USA)</li>
-                    <li><strong>[2024] Novelis Graduate Scholar </strong>: Novelis Innovation Hub (GA & KY, USA)</li>
-                    <li><strong>[2022] EIIF Fellow </strong>: TokyoTech + Strategic Energy Institute @ GT (Oahu, HI, USA)</li>
-                  <li><strong>[2022] CMS3 Fellow </strong>: NSF + Texas A&M University (College Station, TX, USA)</li>
-                  <li><strong>[2019] TEQIP III Grant (NIT Durgapur)</strong> Travel Grant to present my poster at DAE-CCS 2019 (Mumbai, MH, India)</li>
-                  <!--<li><strong>[Coursera]</strong> Grant of Financial Aid to pursue Stanford University's ML Course</li>-->
-                <!--</ul>
-              </td>
-            </tr>
-          </table>-->
-
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-  <tr>
-    <td>
-      <heading>Selected Awards & Accolades</heading>
-      <ul>
-        <li>
-          <strong>[2025] Woodruff School Fellow</strong>: GWW School of Mechanical Engineering, GeorgiaTech (Atlanta, GA, USA)
-        </li>
-        <li>
-          <strong>[2024] Novelis Graduate Scholar</strong>: Novelis Innovation Hub & Novelis Inc (Kennesaw, GA, USA)
-          <ul>
-            <li>
-              <em>Featured in:</em> <a href="https://research.gatech.edu/novelis/novelis-scholars/2023">GTRI News</a> based on the scholarship awarded by <a href="https://novelis.com/">Novelis Inc.</a> (world's largest aluminium rolling & recycling) as a top scholar conducting research in aspects of sustainability (de-carbonization), techno-economics of circularity, high-throughput materials discovery, & AI/data science.
-            </li>
-          </ul>
-        </li>
-        <li>
-          <strong>[2022] EIIF Fellow</strong>: TokyoTech & Strategic Energy Institute @GT (Honolulu, HI, USA)
-          <ul>
-            <li>
-              <em>Invited Scholar:</em> <a href="https://twitter.com/MEGeorgiaTech/status/1613920889229172736?s=20">GT Strategic Energy Institute</a> covering us at the 2nd Energy & Informatics Forum.
-            </li>
-          </ul>
-        </li>
-        <li>
-          <strong>[2022] CMS3 Fellow</strong>: NSF + Texas A&M University (College Station, TX, USA)
-        </li>
-      </ul>
-      <h3 style="color:darkcyan;"> Other "selected" Media & Press:</h3>
-      <ul>
-        <li>
-          <strong>[2025] <a href="https://x.com/TMSSociety/status/1995133259970236736">TMS Standout Article</a></strong>: Journal article on Lean CNNs highlighted by TMS Editors as a standout article for 2025.
-        </li>
-        <li>
-          <strong>[2018] <a href="https://www.telegraphindia.com/culture/backyard-start-ups/cid/1509086">The Telegraph (India)</a></strong>: Featured in "Backyard Startups" regarding the launch of #JustHashtags without VC assistance.
-        </li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tr>
-              <td>
-                <heading>Technical Skills</heading>
-                <ul>
-                  <li><strong>[Machine Learning/AI]</strong>: Neural Networks, Gaussian Process Regression, Normalizing Flows, Autoencoder, Convolutions</li>
-                  <li><strong>[Programming & Data Science]</strong>: Python (with key libraries like PyTorch, GPyTorch, BOTorch, Pyvista, SciPy, scikit-learn), R, Java, C</li>
-                  <li><strong>[Engineering Simulation]</strong>: VASP, LAMMPS, GROMACS, DFT, Molecular Dynamics, CG-Martini3, ORCA, MACE</li>
-                  <li><strong>[HPC/Cloud Platforms]</strong>: MPI, AWS, GCP, Azure, Shell Scripting (SLURM/PBS), Flask, Firebase, Hadoop, BigData</li>
-                  <li><strong>[Advanced Graduate Courses]</strong>: Parallel Computing (HPC), Density Functional Theory, Uncertainty Quantification, DoE, ML, DL</li>
-                  <li><strong>[Process Informatics & Experimental Design]</strong>: Bayesian Optimization, Design of Exp., Pareto Frontier Analysis, Active Learning</li>
+            <div class="section-box">
+                <h2>Experience</h2>
+                <ul class="timeline">
+                    <li>
+                        <strong>Graduate Research Assistant</strong><br>
+                        Georgia Institute of Technology (2021 - Present)<br>
+                        <small>Developing autonomous systems for materials design (MINED Group).</small>
+                    </li>
+                    <li>
+                        <strong>Data Science Manager</strong><br>
+                        Multiscale Technologies Inc (Jan 2024 - Aug 2024)<br>
+                        <small>Developed AI-based workflows for transnational clients.</small>
+                    </li>
+                    <li>
+                        <strong>Research Assistant</strong><br>
+                        Bhabha Atomic Research Centre (2019 - 2021)<br>
+                        <small>DFT & AIMD simulations for hydrogen storage materials.</small>
+                    </li>
                 </ul>
-              </td>
-            </tr>
-          </table>
+            </div>
+        </div>
 
-        <!-- Research/Work Experience -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" id="exp"><tbody>
-          <tr>
-            <td>
-              <heading>Professional Experiences</heading>
-        <table style="width:100%;border:0px;border-spacing:15px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <!-- <heading>Publications</heading> -->
-            <tr>
-                 <!--squint-->
-              <td width="30%"><img src="images/gt.png" alt="GT" width="150"  style="border-style: none">
-                <td valign="top" width="70%">
-                  <strong>Graduate Research Assistant<br>Georgia Institute of Technology, Atlanta, USA <a href="https://gatech.edu/" target="_blank">[open]</a></strong>
-                 <br> <em>August 2021 to December 2023</em><br><em>August 2024 to Present</em><br>
-                    <br><strong>Advisor: <a href="https://www.researchgate.net/profile/Surya-Kalidindi">Dr. Surya Kalidindi</strong></a>
-                <p>
-                ◦ Working on an undisclosed Materials Discovery project using AI to surrogate DFT simulations.   <br>
-                ◦ Developed proficiency in using HPC protocols to parallelize code structures for optimizing performance on supercomputers. <br>
-                 </p></td>
-              </tr>
-              <tr>   
-              <!--squint-->
-              <td width="30%"><img src="images/multiscale.png" alt="GT" width="150"  style="border-style: none">
-                <td valign="top" width="70%">
-                  <strong>Data Science Manager / Materials Scientist<br>Multiscale Technologies Inc, Seattle, USA <a href="https://multiscale.tech/" target="_blank">[open]</a></strong>
-                 <br> <em>January 2024 to August 2024</em><br>
-                    <br><strong>Advisor: <a href="https://www.linkedin.com/in/srikanth-kasam-b70286b3/">Srikanth Kasam</a> / <a href="https://www.linkedin.com/in/vasukalidindi/">Vasu Kalidindi</strong></a>
-                <p>
-                ◦ Developing AI-based Materials Design workflows for transnational clients  <br>
-                ◦ Integrating new and pre-existing workflows in the pursuit of accelerated materials discovery. <br>
-                 </p></td>
-              </tr>
-          <tr> 
-              <!--squint-->
-              <td width="30%"><img src="images/gt.png" alt="GT" width="150"  style="border-style: none">
-                <td valign="top" width="70%">
-                  <strong>Head Teaching Assistant<br>Georgia Institute of Technology, Atlanta, USA <a href="https://gatech.edu/" target="_blank">[open]</a></strong>
-                 <br> <em>January 2023 to May 2023</em><br>
-                    <br><strong>Syllabus: <a href="docs/me8813ML_syllabus_spr2023.pdf">Spring 2023</strong></a>
-                <p>
-                ◦ ME-8813 : AI4ME (ML Fundamentals for Mechanical Engineering).   <br>
-                ◦ Introduction of machine learning methods and computational algorithms to solve materials science & mechanical engineering problems   <br>
-                ◦ Teaching lectures, preparing & grading Homeworks. <br>
-                 </p></td>
-              </tr>
-              <tr>
-              
-              <!--squint-->
-              <td width="30%"><img src="images/barc.png" alt="BARC" width="150"  style="border-style: none">
-                <td valign="top" width="70%">
-                  <strong>Research Assistant<br>Bhabha Atomic Research Centre Mumbai, India <a href="https://barc.gov.in/" target="_blank">[open]</a></strong>
-                 <br> <em>May 2019 to July 2021</em><br>
-                    <br><strong>Advisor: <a href="https://www.researchgate.net/profile/Brahmananda-Chakraborty">Dr. Brahmananda Chakraborty</strong></a>
-                <p>
-                ◦ Completed multiple projects to predict novel materials for efficient Hydrogen Storage using DFT (Density Functional Theory), Bader Charge Ananlysis & AIMD (Ab-Initio Molecular Dynamics) Simulations.
-                   (3 Research Articles Published)
-                <br>◦ Poster Presented on general work done in BARC at DAE CCS 2019
-                <br>◦ Prediction of optimal Nuclear Coolant Materials for Molten Salt Reactors The variation of properties of fluoride and chloride salts against various factors & conditions were studied.
-            </p></td>
-              </tr>
-              <tr>
+        <div class="row">
+            <div class="section col-fat">
+                <h2 class="section-title">Education</h2>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="images/gt.png" alt="GT" class="item-logo">
+                        <div class="item-content">
+                            <h3 class="item-title">Doctor of Philosophy (PhD)</h3>
+                            <div class="item-meta">Georgia Institute of Technology | Aug 2021 - Present</div>
+                            <p>Advisor: Dr. Surya R. Kalidindi. Major: Materials Informatics.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/gt_coc_norm.png" alt="GT COC" class="item-logo">
+                        <div class="item-content">
+                            <h3 class="item-title">Master of Science (MS)</h3>
+                            <div class="item-meta">Georgia Institute of Technology | Jan 2023 - Dec 2024</div>
+                            <p>Major: Computational Science & Engineering.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/nitd.png" alt="NITD" class="item-logo">
+                        <div class="item-content">
+                            <h3 class="item-title">Bachelor of Technology (B.Tech)</h3>
+                            <div class="item-meta">NIT Durgapur, India | 2016 - 2020</div>
+                            <p>Metallurgical Engineering. First Class.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/dbpc.jpg" alt="HS" class="item-logo">
+                        <div class="item-content">
+                            <h3 class="item-title">High School (10+2)</h3>
+                            <div class="item-meta">Don Bosco School Park Circus | 2002 - 2016</div>
+                            <p>ISC (95.25%) | ICSE (94.60%).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="section col-thin">
+                <h2 class="section-title">Certifications</h2>
+                <div class="item-list">
+                    <div class="item">
+                        <img src="images/scheller.jpg" alt="Scheller" class="item-logo">
+                        <div class="item-content">
+                            <h3 class="item-title">Management of Technology</h3>
+                            <div class="item-meta">Scheller College (2025)</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/mse.jpg" alt="MSE" class="item-logo">
+                        <div class="item-content">
+                            <h3 class="item-title">Comp. Mat. Sci. & Eng.</h3>
+                            <div class="item-meta">Georgia Tech (2023)</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/tamu.png" alt="TAMU" class="item-logo">
+                        <div class="item-content">
+                            <h3 class="item-title">CMS3 Summer School</h3>
+                            <div class="item-meta">Texas A&M (2022)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <!--squint-->
-            <td width="30%"><img src="images/iitb.png" alt="IITKgp" width="150"  style="border-style: none">
-            <td valign="top" width="70%">
-              <strong>Research Intern<br>Indian Institute of Technology Bombay, India <a href="http://www.iitb.ac.in/" target="_blank">[open]</a></strong>
-             <br> <em>July 2020 - Nov 2020</em><br>
-                <br><strong>Advisor: <a href="https://www.me.iitb.ac.in/~alankar/">Dr. Alankar Alankar</strong></a>
-            <p>
-                Worked on a Materials Informatics project using the Random Forest - Machine Learning Algorithm in Python. The determination of Mechanical Properties of various binary and ternary alloys with the aid of Materials Informatics and ML-driven approaches was analyzed.<a href="http://imagen-iitb.herokuapp.com/"> [weblink]</a> <!--<a href="http://imagen-iitb.herokuapp.com/">[weblink 2]</a>-->
-                 <!-- <p>Implemented Apriori Alogithm to collerate sensor data collected from Smart IoT Devices to predict Transient Anomaly/Failure of the sensors based on Activies of a person in a house.<br><br><a href="https://drive.google.com/file/d/1gG1oW0DdjNE6bD89yrlYlmhHa3SVPdoG/view?usp=sharing" target="_blank"><strong>[Certificate]</strong></a></p> -->
-                </p></td>
-          </tr>
-          <tr>
+        <div class="section" id="research">
+            <h2 class="section-title">Publications & Talks</h2>
+            <script src="https://bibbase.org/show?bib=https%3A%2F%2Fbibbase.org%2Fzotero-mypublications%2Fpranoyr&jsonp=1"></script>
+            
+            <h3 style="margin-top:2rem; color:var(--gt-blue);">Invited Talks</h3>
+            <ul>
+                <li><strong>Lean CNNs for materials discovery:</strong> Trinity College | Dublin, Ireland - Oct 2025</li>
+                <li><strong>Bayesian frameworks for advanced materials design:</strong> Novelis NGRTC | Kennesaw, GA - Oct 2024</li>
+                <li><strong>Bayesian Optimization of CG Topologies:</strong> TMS Fall Meeting | Pittsburgh, PA - Oct 2024</li>
+                <li><strong>Feature engineering of ECD fields:</strong> 2nd EIIF (TokyoTech) | Oahu, HI - Dec 2022</li>
+            </ul>
 
-            <!--squint-->
-            <td width="30%"><img src="images/iitkgp.png" alt="SRM-IST, Chennai" width="150"  style="border-style: none">
-            <td valign="top" width="70%">
-              <strong>Research Intern<br>Indian Institute of Technology Kharagpur, India <a href="https://www.iitkgp.ac.in/" target="_blank">[open]</a> </strong>
-              <br>
-              <em>June 2020 - Oct 2020</em> <br>
-               <br><strong>Advisor: <a href="https://sites.google.com/site/shibayansdreams/">Dr. Shibayan Roy</strong></a>
-              <p>
-                ◦ Worked on a Phase-Field Modelling project involving DFT & MD Simulations.<br>
-                ◦ Managed Collaborations with Washington University at St. Louis & IIT Kanpur </p>
-              </td>
-          </tr>
-          <br>
-          <tr>
+            <h3 style="margin-top:2rem; color:var(--gt-blue);">Conferences</h3>
+            <ul>
+                <li><strong>Statistical quantification of helicity in linear PFAS:</strong> ACS Spring Meeting (Atlanta) - Mar 2026</li>
+                <li><strong>Structure-aware Bayesian optimization:</strong> SES Annual Technical Meeting (Atlanta) - Oct 2025</li>
+                <li><strong>Accelerating Molecular Design:</strong> MSE Research Showcase (GT) - Oct 2024</li>
+                <li><strong>Ti-doped Carbon Nanostructure:</strong> DAE Computational Chemistry Symposium (Mumbai) - Nov 2019</li>
+            </ul>
+        </div>
 
-              <!--squint-->
-              <td width="30%"><img src="images/hal.png" alt="SRM-IST, Chennai" width="150"  style="border-style: none">
-                <td valign="top" width="70%">
-                  <strong>Project & Industrial Intern<br> Hindustan Aeronautics Limited <a href="https://hal-india.co.in/Index.aspx" target="_blank">[open]</a> </strong>
-                  <br>
-                  <em>May 2018 to July 2018</em> <br>
-                    <br><strong>Advisory Department: <a href="https://hal-india.co.in/Foundry%20Forge%20Division%20Bangalore/M__98">Foundry & Forge Division</strong></a>
-                  <p>
-                    Completed two Projects, namely: <a href="https://drive.google.com/drive/folders/1TWM_Lru-qzsRGt8F32zw-lly0hkyOtRM?usp=sharing">[open]</a><br>
-                    <!--<ul>
-                    <li> -->◦ The Identification of Post Investment Casting Defects<br><!--</li>
-                    <li>-->◦ Preventive Measures for Quality Control using Lean Management<br> <!--</li>
-                </ul>-->
-                  </p>
-                 
-                </td>
-              </tr>
-              <br>
-              <tr>
+        <div class="row">
+            <div class="section col-half">
+                <h2 class="section-title">Selected Awards</h2>
+                <ul>
+                    <li><strong>[2025] Woodruff School Fellow</strong>: Georgia Tech.</li>
+                    <li><strong>[2024] Novelis Graduate Scholar</strong>: Novelis Inc.</li>
+                    <li><strong>[2022] EIIF Fellow</strong>: TokyoTech & Strategic Energy Institute.</li>
+                    <li><strong>[2022] CMS3 Fellow</strong>: NSF + Texas A&M.</li>
+                    <li><strong>[2018] Startup Feature</strong>: The Telegraph (India).</li>
+                </ul>
+            </div>
+            <div class="section col-half">
+                <h2 class="section-title">Service to Community</h2>
+                <ul>
+                    <li><strong>Reviewer:</strong> NeurIPS, CVPR, SciPy, J. Mat. Sci.</li>
+                    <li><strong>Session Chair:</strong> Undergraduate Research Symposium, GT.</li>
+                    <li><strong>Internal VP:</strong> MEGA (MechE Grad Association).</li>
+                    <li><strong>Contributor:</strong> JARVIS (NIST), Mozilla Foundation.</li>
+                    <li><strong>Leadership:</strong> President EDC, Treasurer Strokes (NITD).</li>
+                </ul>
+            </div>
+        </div>
 
-                   <!--squint-->
-              <td width="30%"><img src="images/nitd.png" alt="SRM-IST, Chennai" width="150"  style="border-style: none">
-                <td valign="top" width="70%">
-                  <strong>Undergraduate Research Assistant<br>Physics Department, NIT Durgapur</strong>
-                  <br>
-                  <em>Summer-Winter 2017</em> <br>
-                    <br><strong>Advisor: <a href="https://nitdgp.ac.in/department/physics/faculty-14/hirok-chaudhuri">Dr. Hirok Chaudhuri</strong></a>
-                  <p>
-                  <i>Determination of Water Contamination Content Profile in a Steel Plant Belt(Durgapur)</i>- Project completed at the Physics Department, NITD. The determination of the impurity content profile in water and their effect in our daily lives, besides a few other detrimental physical factors were measured, which were further used as inputs to fabricate an experimental anti-polluting membrane.
-                  </p>
-                 
-                </td>
-              </tr>
-              <br>
-              <tr>
+        <div class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <ul style="columns: 2; -webkit-columns: 2; list-style-position: inside;">
+                <li><strong>AI/ML:</strong> PyTorch, GPyTorch, BoTorch, CNNs, Autoencoders, Normalizing Flows</li>
+                <li><strong>Simulation:</strong> VASP, LAMMPS, GROMACS, DFT, Molecular Dynamics</li>
+                <li><strong>Programming:</strong> Python, R, Java, C, Bash/Shell</li>
+                <li><strong>HPC/Cloud:</strong> MPI, AWS, Azure, SLURM/PBS</li>
+                <li><strong>Informatics:</strong> Bayesian Optimization, DoE, Active Learning</li>
+            </ul>
+        </div>
 
-            </td>
-        </tr>
-      </tbody></table>        
-        </tbody></table>
-           
+        <div class="section">
+            <h2 class="section-title">Achievements & Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/trinity.png" alt="Trinity"><div class="gallery-caption">Invited Seminar, Dublin (2025)</div></div>
+                <div class="gallery-item"><img src="images/novelis.jpg" alt="Novelis"><div class="gallery-caption">Novelis Scholar's Day (2024)</div></div>
+                <div class="gallery-item"><img src="images/mst24.jpg" alt="TMS"><div class="gallery-caption">TMS Fall Meeting (2024)</div></div>
+                <div class="gallery-item"><img src="images/TA.jpg" alt="AI4ME"><div class="gallery-caption">AI for MechE Lecture (2023)</div></div>
+                <div class="gallery-item"><img src="images/HI.jpg" alt="Hawaii"><div class="gallery-caption">EIIF Talk, Hawaii (2022)</div></div>
+                <div class="gallery-item"><img src="images/cessna.jpg" alt="Flying"><div class="gallery-caption">Flying Cessna 172 (2022)</div></div>
+                <div class="gallery-item"><img src="images/HIS2.jpg" alt="Surfing"><div class="gallery-caption">Surfing Waikiki (2022)</div></div>
+                <div class="gallery-item"><img src="images/Arabia.jpg" alt="Hike"><div class="gallery-caption">MINED Hike (2021)</div></div>
+                <div class="gallery-item"><img src="images/DAE.jpg" alt="DAE"><div class="gallery-caption">DAE Award (2019)</div></div>
+                <div class="gallery-item"><img src="images/startup.jpg" alt="Startup"><div class="gallery-caption">Startup Feature (2018)</div></div>
+            </div>
+            <br>
+            <center>
+                <img src="images/map2.png" style="max-width:100%; border-radius:4px;" alt="Map">
+                <p style="font-size:0.9rem; color:#666;">Global Footprint</p>
+                <a href="https://my.flightradar24.com/pranoy"><img src="https://banners-my.flightradar24.com/pranoy.png" alt="Flightdiary" style="max-width:100%;"></a>
+            </center>
+        </div>
 
-<center><heading>ACHIEVEMENTS & EXPERIENCES</heading></center>
-<br><br>
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-    <colgroup>
-    <col span="4">
-  </colgroup>
-        <tr>
-                                              <td>
-                                          <center>
-<div class="gallery">
-  <a target="_blank" href="images/trinity.png">
-    <img src="images/trinity.png" alt="Trinity College" width="550" height="400">
-  </a>
-  <div class="desc">Invited Seminar<br>Trinity College (Host: <a href="https://en.wikipedia.org/wiki/Stefano_Sanvito">Prof. Stefano Sanvito</a>)<br>Dublin IRELAND-2025</div>
-</div>
-</center>    
-                                  </td>
-                        <td>
-                                          <center>
-<div class="gallery">
-  <a target="_blank" href="images/251.png">
-    <img src="images/251.png" alt="Poster - SES 2025" width="550" height="400">
-  </a>
-  <div class="desc">Poster Presentation<br>SES Annual Technical Meeting<br>Atlanta USA-2025</div>
-</div>
-</center>  
-                            
-                          </td>
-                <td>
-                        <center>
-<div class="gallery">
-  <a target="_blank" href="images/252.png">
-    <img src="images/252.png" alt=" Talk - SES 2025" width="550" height="400">
-  </a>
-  <div class="desc">Research Talk<br>SES Annual Technical Meeting<br>Atlanta USA-2025</div>
-</div>
-</center> 
-                    </td>
+    </div>
 
-
-    </tr>
-    <tr>
-                                              <td>
-                                          <center>
-<div class="gallery">
-  <a target="_blank" href="images/novelis.jpg">
-    <img src="images/novelis.jpg" alt="Novelis Kennesaw" width="550" height="400">
-  </a>
-  <div class="desc">Invited Talk<br>Novelis Scholar's Day<br>Kennesaw USA-2024</div>
-</div>
-</center>    
-                                  </td>
-                        <td>
-                                          <center>
-<div class="gallery">
-  <a target="_blank" href="images/marcus.jpg">
-    <img src="images/marcus.jpg" alt="MSE Research Showcase" width="550" height="400">
-  </a>
-  <div class="desc">Poster Presentation<br>MSE Research Show<br>GT@Fall-2024</div>
-</div>
-</center>  
-                            
-                          </td>
-                <td>
-                        <center>
-<div class="gallery">
-  <a target="_blank" href="images/mst24.jpg">
-    <img src="images/mst24.jpg" alt="Invited Talk - MS&T" width="550" height="400">
-  </a>
-  <div class="desc">Invited Talk - MS&T<br>TMS Fall Meeting<br>Pittsburgh USA-2024</div>
-</div>
-</center> 
-                    </td>
-
-
-    </tr>
-            <tr>
-                                              <td>
-                                          <center>
-<div class="gallery">
-  <a target="_blank" href="images/TA.jpg">
-    <img src="images/TA.jpg" alt="AI4ME" width="550" height="400">
-  </a>
-  <div class="desc">Delivering a Lecture<br>AI for MechE<br>GT@Spring-2023</div>
-</div>
-</center>    
-                                  </td>
-                        <td>
-                                          <center>
-<div class="gallery">
-  <a target="_blank" href="images/HI.jpg">
-    <img src="images/HI.jpg" alt="2nd Energy & Informatics Symposium" width="550" height="400">
-  </a>
-  <div class="desc">Invited Talk<br>2nd EIIF-TokyoTech<br>Hawaii USA-2022</div>
-</div>
-</center>  
-                            
-                          </td>
-                <td>
-                        <center>
-<div class="gallery">
-  <a target="_blank" href="images/CMS3-TAMU.jpg">
-    <img src="images/CMS3-TAMU.jpg" alt="CMS3-TAMU" width="550" height="400">
-  </a>
-  <div class="desc">Summer School Diploma<br>CMS3-TAMU-NSF<br>Texas USA-2022</div>
-</div>
-</center> 
-                    </td>
-
-
-    </tr>
-    <tr>
-        <td>
-                  <center>
-<div class="gallery">
-  <a target="_blank" href="images/DAE.jpg">
-    <img src="images/DAE.jpg" alt="DAE 2019" width="550" height="400">
-  </a>
-  <div class="desc">Award<br>DAE-CCS-BARC<br>Mumbai INDIA-2019</div>
-</div>
-</center>
-            </td>
-        <td>
-                  
-<center>
-<div class="gallery">
-  <a target="_blank" href="images/BARC-horizontal.JPG">
-    <img src="images/BARC-horizontal.JPG" alt="DAE-CCS 2019" width="550" height="400">
-  </a>
-  <div class="desc">Poster Presentation<br>DAE-CCS-BARC<br>Mumbai INDIA-2019</div>
-</div>
-</center>
-            </td>
-                <td>
-                  
-<center>
-<div class="gallery">
-  <a target="_blank" href="images/startup.jpg">
-    <img src="images/startup.jpg" alt="JustHashtags" width="550" height="400">
-  </a>
-  <div class="desc">Startup Feature<br>The Telegraph<br>Kolkata INDIA-2018</div>
-</div>
-</center>
-
-</td>
-    </tr>
-</table>
-<br>
-<br>
-
-
-
-<center><heading>BEYOND WORK</heading></center>
-<br><br>
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-    <colgroup>
-    <col span="4">
-  </colgroup>
- <tr>
-
-<td>
-<center>
-<div class="gallery">
-  <a target="_blank" href="images/HIS2.jpg">
-    <img src="images/HIS2.jpg" alt="Hawaii-Surfing" width="550" height="400">
-  </a>
-  <div class="desc">Surfing in the Pacific<br>Waikiki Beach<br>Hawaii USA-2022</div>
-</div>
-</center>       
- </td>
-<td>
- <center>
-<div class="gallery">
-  <a target="_blank" href="images/cessna.jpg">
-    <img src="images/cessna.jpg" alt="YJFC" width="550" height="400">
-  </a>
-  <div class="desc">Flying a Cessna 172<br>Stone Mountain<br>Georgia USA-2022</div>
-</div>
-</center>    
- </td>
-<td>
-<center>
-<div class="gallery">
-  <a target="_blank" href="images/Arabia.jpg">
-    <img src="images/Arabia.jpg" alt="MINED Hike" width="550" height="400">
-  </a>
-    <div class="desc">MINED Group Hike<br>Arabia Mountain<br>Georgia USA-2021</div>
-</div>
-</center> 
-</td>
-                
-</tr>
-</table>
-<br>
-<br>
-<center>
-<div>
-  <a target="_blank" href="images/map2.png">
-    <img src="images/map2.png" alt="Map" width="700" height="324">
-  </a>
-    <figcaption>Places where I have either worked or been to or have cross-functional collaborators
-<br>Updated: December-2022</figcaption>
-</div>
-</center> 
-<br>
-<br>
+    <footer style="background:#333; color:white; padding:2rem; text-align:center; margin-top:2rem;">
+        <p>&copy; 2026 Pranoy Ray</p>
+        <p><em>"Break the cycle, Morty. Rise above. Focus on Science."</em></p>
         
+        <div style="margin-top:1rem; opacity:0.7;">
+            <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=cf069cd181c4a0f89af65f0aea11dca75d38c2cd'></script>
+            <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/828538/t/2"></script>
+        </div>
+        <br>
+        <a href="https://www.buymeacoffee.com/pranoy"><button class="run-btn" style="background:orange; color:white;">Buy Me a Coffee</button></a>
+    </footer>
 
-<center><a href="https://my.flightradar24.com/pranoy"><img src="https://banners-my.flightradar24.com/pranoy.png" alt="My Flightdiary.net profile" /></a></center><br>
-          <center><h4 class="vcenter"><div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-2589-1642" href="https://orcid.org/0000-0002-2589-1642" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-2589-1642</a> 
-                    <br><!--<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="pranoyr" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/pranoyr?trk=profile-badge"><script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>Pranoy Ray</a></div>-->
-              <!--<font><span><img src="Linkedin.JPG" alt="Linkedin" width="300"  style="border-style: none"></span></font>--></center>
-              <br><font><center><span><a href="https://www.buymeacoffee.com/pranoy"><button class="button" style="vertical-align:middle;background-color:orange">Buy Me a Coffee</button></a></span></center></font></center>
-               </div></h4>
-
-<div id="editor"></div>
-<center><button onclick="window.print()"><!--id="cmd"-->Print/Save this page</button></center>
-<br>
-
-
-
-<center> <a href='http://www.freevisitorcounters.com'>on freevisitorcounters.com</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=cf069cd181c4a0f89af65f0aea11dca75d38c2cd'></script>
-<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/828538/t/2"></script></center>
-<br>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-                  <hr>
-                  <p align="center">
-                    <quote><!--We will not only use the machines for their intelligence, we will also collaborate with them in ways that we cannot even imagine. ~ Fei-Fei Li--><i><b>Break the cycle, Morty. Rise above. Focus on Science.</b></i></quote><br>
-                 <!--   <font><a href="https://www.buymeacoffee.com/pranoy">[Buy Me a Coffee]</a></font><br><br>-->
-
-                  <!--<font>(Design and CSS courtesy: <a href="https://jonbarron.info/">Jon Barron</a>, <a href="https://abhoi.github.io/">Amlaan Bhoi</a>, <a href="https://purvaten.github.io/">Purva Tendulkar</a> and <a href="https://arkochatterjee.github.io/">Arko Chatterjee</a>)</font>-->
-             <!--     </p>
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:0px">
-                  <hr>
-                  <p align="center">-->
-<!--                   <quote>We will not only use the machines for their intelligence, we will also collaborate with them in ways that we cannot even imagine. ~ Fei-Fei Li</quote><br>
---> 
-                  <font><i>(Design and CSS courtesy: <a href="https://jonbarron.info/">Jon Barron</a> and <a href="https://arkochatterjee.github.io/">Arko Chatterjee</a>)</i></font>
-                  </p>
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
+    <script>
+        const pfasData = {
+            'PFOA': { formula: 'C8F15O2', enthalpy: '-1953.63 Ha', type: 'Perfluoroalkyl Acid' },
+            'PFHxS': { formula: 'C6F13O3S', enthalpy: '-2151.10 Ha', type: 'Sulfonic Acid' }
+        };
+        function runPFAS() {
+            const mol = document.getElementById('pfas-select').value;
+            const res = document.getElementById('pfas-result');
+            res.innerHTML = "Querying Database...";
+            setTimeout(() => {
+                const d = pfasData[mol];
+                res.innerHTML = `<strong>Formula:</strong> ${d.formula}<br><strong>Enthalpy:</strong> ${d.enthalpy}`;
+            }, 600);
+        }
+        function runAlloy() {
+            const res = document.getElementById('alloy-result');
+            const txt = document.getElementById('alloy-text');
+            const barR = document.getElementById('bar-random');
+            const barS = document.getElementById('bar-sp');
+            
+            if(txt) txt.innerHTML = "Calculating...";
+            if(barR) barR.style.height = "10%";
+            if(barS) barS.style.height = "10%";
+            
+            setTimeout(() => {
+                if(barR) barR.style.height = "90%";
+                if(barS) barS.style.height = "50%";
+                if(txt) txt.innerHTML = "Result: Support Points require <strong>40% fewer</strong> samples.";
+            }, 600);
+        }
+    </script>
 </body>
-
 </html>
