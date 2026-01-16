@@ -319,32 +319,8 @@
             
             <div class="card">
                 <div class="card-header">
-                    <h3>screenPFAS</h3>
-                    <span class="project-tag">Cheminformatics</span>
-                    <span class="project-tag">DFT</span>
-                </div>
-                <div class="card-body">
-                    <p><strong>Goal:</strong> High-throughput screening of "forever chemicals" (PFAS) using ML descriptors.</p>
-                    <p>This demo retrieves <strong>real DFT data</strong> from the project database (RAZA_DFT_DATABASE.json).</p>
-                    
-                    <div class="demo-area">
-                        <div class="demo-controls">
-                            <select id="pfas-select">
-                                <option value="PFOA">Molecule: PFOA (C8F15O2)</option>
-                                <option value="PFHxS">Molecule: PFHxS (C6F13O3S)</option>
-                                <option value="PFBS">Molecule: PFBS (C4F8O3S)</option>
-                            </select>
-                            <button class="run-btn" onclick="runPFAS()">Get Properties</button>
-                        </div>
-                        <div id="pfas-result" class="demo-result">Select a molecule to view DFT data.</div>
-                    </div>
-                    <p style="font-size: 0.8rem; margin-top: 10px;">*Data source: Uploaded JSON database.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h3>AlloyDesignSP</h3>
+                    <h3>Molecular Voxelization Framwework</h3>
+                    <span class="project-tag">Materials Design</span>
                     <span class="project-tag">Bayesian Optimization</span>
                     <span class="project-tag">DoE</span>
                 </div>
@@ -370,9 +346,36 @@
 
             <div class="card">
                 <div class="card-header">
+                    <h3>screenPFAS</h3>
+                    <span class="project-tag">Cheminformatics</span>
+                    <span class="project-tag">DFT</span>
+                    <span class="project-tag">Forever Chemicals</span>
+                </div>
+                <div class="card-body">
+                    <p><strong>Goal:</strong> High-throughput screening of "forever chemicals" (PFAS) using ML descriptors.</p>
+                    <p>This demo retrieves <strong>real DFT data</strong> from the project database (RAZA_DFT_DATABASE.json).</p>
+                    
+                    <div class="demo-area">
+                        <div class="demo-controls">
+                            <select id="pfas-select">
+                                <option value="PFOA">Molecule: PFOA (C8F15O2)</option>
+                                <option value="PFHxS">Molecule: PFHxS (C6F13O3S)</option>
+                                <option value="PFBS">Molecule: PFBS (C4F8O3S)</option>
+                            </select>
+                            <button class="run-btn" onclick="runPFAS()">Get Properties</button>
+                        </div>
+                        <div id="pfas-result" class="demo-result">Select a molecule to view DFT data.</div>
+                    </div>
+                    <p style="font-size: 0.8rem; margin-top: 10px;">*Data source: Uploaded JSON database.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
                     <h3>Forest Fires Modeling</h3>
                     <span class="project-tag">PDE</span>
-                    <span class="project-tag">Agent-Based Modeling</span>
+                    <span class="project-tag">Agent-Based Models</span>
+                    <span class="project-tag">Weather Agents</span>
                 </div>
                 <div class="card-body">
                     <p>Comparing Partial Differential Equations (PDE) and Agent-Based Models (ABM) for fire spread simulation.</p>
@@ -381,6 +384,9 @@
                         <img src="timelapse-actual.gif" alt="Forest Fire Simulation" style="width:100%; display:block;" onerror="this.src='https://via.placeholder.com/400x200?text=GIF+Not+Found'">
                     </div>
                     <p style="font-size: 0.8rem; text-align: center;">Actual output: PDE Solver Timelapse</p>
+                    <div class="links">
+                        <span>Contributors: S. Avasarala, X. An, P. Ray</span>
+                    </div>
                 </div>
             </div>
 
