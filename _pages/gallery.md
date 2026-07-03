@@ -10,7 +10,7 @@ nav_order: 5
 <div class="row row-cols-1 row-cols-md-3">
   <div class="col mb-4">
     {% include figure.liquid path="assets/img/trinity.png" title="Trinity" class="img-fluid rounded z-depth-1" %}
-    <div class="caption">Talk, Trinity College Dublin (2025)</div>
+    <div class="caption">Invited Talk, Trinity College Dublin (2025)</div>
   </div>
   <div class="col mb-4">
     {% include figure.liquid path="assets/img/251.png" title="SES" class="img-fluid rounded z-depth-1" %}
