@@ -1,14 +1,17 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - pranoy-ray
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - pranoy-ray/screenPFAS
+  - pranoy-ray/AlloyDiscovery
+  - pranoy-ray/AlloyDesignSP
+  - pranoy-ray/LeanCNN
+  - pranoy-ray/ForestFiresModeling
+  - pranoy-ray/MOBOforCGMDblends
+  - pranoy-ray/PFAShelix
+  - pranoy-ray/cubicTI
+  - pranoy-ray/materialsinformatics_IITB2020
+  - pranoy-ray/MVC_AlgoAnalysis
+  - pranoy-ray/FSX-Key-Commands-Cheatsheet
