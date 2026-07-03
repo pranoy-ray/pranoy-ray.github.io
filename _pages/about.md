@@ -2,33 +2,32 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: >
+  Postdoctoral Researcher, Argonne National Laboratory & The University of Chicago<br>
+  <a href="https://gagliardigroup.uchicago.edu/members/#postdoctoral-researchers" target="_blank" rel="noopener"><img src="/assets/img/uchicago_logo.png" alt="UChicago" height="22" style="vertical-align:middle; margin: 2px 4px;"></a>
+  <a href="https://www.anl.gov" target="_blank" rel="noopener"><img src="/assets/img/argonne_logo.png" alt="Argonne National Laboratory" height="22" style="vertical-align:middle; margin: 2px 4px;"></a>
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Chicago, Illinois 60615</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: true
+  scrollable: true
+  limit: 5
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
+  scrollable: true
+  limit: 3
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Pranoy is a Postdoctoral Researcher at Argonne National Laboratory and the University of Chicago, working with the Center for Battery Innovation (COBI) and external stakeholders to accelerate battery cathode and electrolyte design and discovery, advised by Dr. Laura Gagliardi and Dr. Rajeev Assary. He earned his Ph.D. in Mechanical Engineering from the Georgia Institute of Technology, advised by Dr. Surya R. Kalidindi, with a thesis on efficient screening strategies for molecular structures.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+He is a computational materials researcher and data scientist specializing in molecular structure screening using spatial statistics. His work develops feature engineering workflows that inform robust material process-structure-property relationships across chemical processes, integrating physics-based constraints with data-driven models on HPC systems. He has driven technical deliverables for chemical, semiconductor, and federal lab partners, and led diverse research teams in fast-paced environments.
