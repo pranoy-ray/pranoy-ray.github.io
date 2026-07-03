@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Bayesian ML for Materials Design
-description: Materials Design · Bayesian Optimization · DoE
+title: Bayesian Optimization for Polymer Design
+description: Coarse-Graining · Martini3 · DoE
 img: assets/img/paretonpj.png
 importance: 2
 category: work
 related_publications: false
 ---
 
-Capturing multiscale phase-separation phenomena through calibration of coarse-grained force fields with MD simulations.
+Capturing multiscale phase-separation phenomena in polymer blends through calibration of coarse-grained force fields with MD simulations.
 
 {% include figure.liquid path="assets/img/paretonpj.png" title="Pareto Front" class="img-fluid rounded z-depth-1" %}
 <div class="caption">Actual output: CGMartini3-MOBO scheme</div>
