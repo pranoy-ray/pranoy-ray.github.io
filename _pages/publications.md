@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Publications are pulled live from my Zotero library via BibBase.
+description: the product of sweat and tears
 nav: true
 nav_order: 2
 ---
