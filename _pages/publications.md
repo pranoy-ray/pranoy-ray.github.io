@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: the product of sweat and tears
+description: the products of sweat and tears
 nav: true
 nav_order: 2
 ---
