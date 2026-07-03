@@ -3,8 +3,8 @@ layout: page
 title: Forest Fires Modeling
 description: PDE · Agent-Based Models · Weather Agents
 img: assets/img/timelapse-actual.gif
-importance: 3
-category: work
+importance: 1
+category: fun
 related_publications: false
 ---
 
