@@ -1,189 +1,116 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
-  image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
-
+  name: Pranoy Ray
+  headline: Postdoctoral Researcher @ Argonne National Laboratory & University of Chicago
+  location: Chicago, IL, USA
+  email: pranoy@gatech.edu
+  website: https://pranoy-ray.github.io
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: pranoy-ray
 
   sections:
-    Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+    summary:
+      - Computational materials researcher and data scientist specializing in molecular structure screening using spatial statistics.
+      - Expertise in feature engineering workflows that inform robust material process-structure-property relationships across chemical processes.
+      - Experienced integrating physics-based constraints with data-driven models on HPC systems, with a track record delivering R&D for chemical, semiconductor, and federal lab partners.
+
+    education:
+      - institution: Georgia Institute of Technology
+        area: Mechanical Engineering
+        degree: PhD
+        start_date: 2021-08
+        end_date: 2026-05
+        location: Atlanta, GA, USA
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Advisor: Dr. Surya R. Kalidindi"
+          - "Thesis: On efficient screening strategies for molecular structures"
+      - institution: Georgia Institute of Technology
+        area: Computational Science and Engineering
+        degree: MS
+        start_date: 2022-08
+        end_date: 2025-05
+        location: Atlanta, GA, USA
+      - institution: National Institute of Technology, Durgapur
+        area: Metallurgical & Materials Engineering
+        degree: BTech
+        start_date: 2016-07
+        end_date: 2020-07
+        location: Durgapur, India
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+    experience:
+      - company: Multiscale Technologies Inc.
+        position: Data Science Manager & Materials Scientist Intern
+        start_date: 2024-01
+        end_date: 2024-08
+        location: Seattle, WA, USA
         highlights:
-          - Description 1.
-          - Description 2.
-
-    Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+          - Designed and deployed active learning workflows to accelerate process optimization, minimizing experimental trial-and-error loops for semiconductor, chemical, and US national lab partners.
+          - Supervised and led a team of data scientists and engineers across the USA, France, India, and Pakistan delivering exploratory materials design solutions for Fortune 100 clients.
+          - Architected the integration of physics-based material simulations into the MIND ecosystem, unifying pipelines across engineering APIs and cross-functional teams under MOT/Root Cause Analysis protocols.
+      - company: Bhabha Atomic Research Centre, HP & SRPD
+        position: "Research Assistant (Advisors: Dr. Srikumar Banerjee & Dr. Brahmananda Chakraborty)"
+        start_date: 2019-05
+        end_date: 2021-08
+        location: Mumbai, India
         highlights:
-          - Relativity
-          - Description 2.
-
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+          - Established theoretical design principles for solid-state hydrogen storage using DFT and AIMD; published multiple papers.
+      - company: Hindustan Aeronautics Limited, Foundry & Forge Division
+        position: "Project & Industrial Intern (Advisor: Soumya Mandi)"
+        start_date: 2018-05
+        end_date: 2018-07
+        location: Bangalore, India
         highlights:
-          - Description 1.
-          - Description 2.
+          - Conducted root cause analysis on manufacturing defects in investment casting, applying process control measures for yield improvement.
+          - Developed preventive measures for quality control using Lean management.
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
+    awards:
+      - name: William H. Glenn Sr. Fellow
+        date: 2026
+        location: Atlanta, GA, USA
+        summary: George W. Woodruff School of Mechanical Engineering, Georgia Tech
+      - name: Woodruff School Fellow
+        date: 2025
+        location: Atlanta, GA, USA
+        summary: Research Excellence, GWW School of Mechanical Engineering, Georgia Tech
+      - name: Novelis Graduate Scholar
+        date: 2024
+        location: Kennesaw, GA, USA
+        summary: Novelis Innovation Hub & Novelis Inc.; featured in GTRI News for research in sustainability, techno-economics of circularity, and AI/data science in materials and manufacturing.
+      - name: EIIF Fellow
+        date: 2022
+        location: Honolulu, HI, USA
+        summary: TokyoTech & Strategic Energy Institute @ GT; invited scholar at the 2nd Energy & Informatics Forum.
+      - name: CMS3 Fellow
+        date: 2022
+        location: College Station, TX, USA
+        summary: NSF + Texas A&M University
 
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
+    certifications:
+      - name: Management of Technology (MOT)
+        date: 2025
+        summary: Scheller College of Business, Georgia Tech
+      - name: Computational Materials Science & Engineering (CMSE)
+        date: 2023
+        summary: School of MSE, Georgia Tech
 
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
+    service:
+      - bullet: "Reviewer & Committee Member — SciPy Conference (2023, 2024, 2025)"
+      - bullet: "Peer Reviewer (AI4Mat) — NeurIPS 2025, CVPR 2025, PEARC 2025, ICLR 2026"
+      - bullet: "Peer Reviewer — Springer Nature, Journal of Materials, Chemical Papers, Artificial Intelligence Review, npj Computational Materials"
+      - bullet: "Session Chair & Reviewer — GT Undergraduate Research Symposium (2025)"
+      - bullet: "Board Member — Emerging Leaders Advisory Board @ GT (2025-2026)"
+      - bullet: "Internal VP — Mechanical Engineering Grad Association (MEGA) @ GT (2023-2024)"
+      - bullet: "President — Entrepreneurship Development Cell, NIT Durgapur (2016-2020)"
+      - bullet: "Treasurer — Strokes (Art & Photography Club), NIT Durgapur (2017-2020)"
 
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
-
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
-
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+    skills:
+      - label: Machine Learning / AI
+        details: Neural Networks, Gaussian Process Regression, Normalizing Flows, Autoencoders, Convolutional Networks
+      - label: Programming & Data Science
+        details: Python (PyTorch, GPyTorch, BOTorch, PyVista, SciPy, scikit-learn), R, Java, C
+      - label: Computational Materials Science
+        details: VASP, LAMMPS, GROMACS, DFT, Molecular Dynamics, CG-Martini3, ORCA
+      - label: HPC / Cloud Platforms
+        details: MPI, AWS, GCP, Azure, Shell Scripting (SLURM/PBS), Flask, Firebase, Hadoop, Big Data
+      - label: Autonomous Design & Decision Making
+        details: Bayesian Optimization, Active Learning, Sequential Decision Making, Pareto Frontier Analysis, Design of Experiments
