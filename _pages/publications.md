@@ -5,6 +5,7 @@ title: publications
 description: the products of sweat and tears
 nav: true
 nav_order: 2
+horizontal: false
 ---
 
 <div class="bibbase_bib" id="bibbase_pranoyr"></div>
