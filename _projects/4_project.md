@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Spatial Statistics for Alloy Discovery
-description: Alloy Design · Spatial Statistics · Extrapolative ML
+title: Applied Statistics for Alloy Design
+description: Electron Density · Spatial Correlations · Extrapolative ML
 img: assets/img/alloy.png
 importance: 3
 category: work
-related_publications: false
+related_publications: true
 ---
 
 Applying spatial-statistics-based structure representations to accelerate the discovery and design of disordered concentrated alloys, extrapolating beyond the training composition space.
