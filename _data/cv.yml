@@ -2,19 +2,19 @@ cv:
   name: Pranoy Ray
   headline: Postdoctoral Researcher @ Argonne National Laboratory & University of Chicago
   location: Chicago, IL, USA
-  email: pranoy@gatech.edu
+  email: pranoy@uchicago.edu
   website: https://pranoy-ray.github.io
   social_networks:
     - network: GitHub
       username: pranoy-ray
 
-  sections:
-    summary:
-      - Computational materials researcher and data scientist specializing in molecular structure screening using spatial statistics.
-      - Expertise in feature engineering workflows that inform robust material process-structure-property relationships across chemical processes.
-      - Experienced integrating physics-based constraints with data-driven models on HPC systems, with a track record delivering R&D for chemical, semiconductor, and federal lab partners.
+  summary: >
+    Computational materials researcher and data scientist specializing in molecular structure screening using spatial statistics.
+    Expertise in feature engineering workflows that inform robust material process-structure-property relationships across chemical processes.
+    Experienced integrating physics-based constraints with data-driven models on HPC systems, with a track record delivering R&D for chemical, semiconductor, and federal lab partners.
 
-    education:
+  sections:
+    Education:
       - institution: Georgia Institute of Technology
         area: Mechanical Engineering
         degree: PhD
@@ -37,7 +37,7 @@ cv:
         end_date: 2020-07
         location: Durgapur, India
 
-    experience:
+    Experience:
       - company: Multiscale Technologies Inc.
         position: Data Science Manager & Materials Scientist Intern
         start_date: 2024-01
@@ -63,37 +63,35 @@ cv:
           - Conducted root cause analysis on manufacturing defects in investment casting, applying process control measures for yield improvement.
           - Developed preventive measures for quality control using Lean management.
 
-    awards:
-      - name: William H. Glenn Sr. Fellow
+    Awards:
+      - title: William H. Glenn Sr. Fellow
         date: 2026
-        location: Atlanta, GA, USA
-        summary: George W. Woodruff School of Mechanical Engineering, Georgia Tech
-      - name: Woodruff School Fellow
+        awarder: George W. Woodruff School of Mechanical Engineering, Georgia Tech
+      - title: Woodruff School Fellow
         date: 2025
-        location: Atlanta, GA, USA
-        summary: Research Excellence, GWW School of Mechanical Engineering, Georgia Tech
-      - name: Novelis Graduate Scholar
+        awarder: GWW School of Mechanical Engineering, Georgia Tech
+        summary: Research Excellence award
+      - title: Novelis Graduate Scholar
         date: 2024
-        location: Kennesaw, GA, USA
-        summary: Novelis Innovation Hub & Novelis Inc.; featured in GTRI News for research in sustainability, techno-economics of circularity, and AI/data science in materials and manufacturing.
-      - name: EIIF Fellow
+        awarder: Novelis Innovation Hub & Novelis Inc.
+        summary: Featured in GTRI News for research in sustainability, techno-economics of circularity, and AI/data science in materials and manufacturing.
+      - title: EIIF Fellow
         date: 2022
-        location: Honolulu, HI, USA
-        summary: TokyoTech & Strategic Energy Institute @ GT; invited scholar at the 2nd Energy & Informatics Forum.
-      - name: CMS3 Fellow
+        awarder: TokyoTech & Strategic Energy Institute @ GT
+        summary: Invited scholar at the 2nd Energy & Informatics Forum.
+      - title: CMS3 Fellow
         date: 2022
-        location: College Station, TX, USA
-        summary: NSF + Texas A&M University
+        awarder: NSF + Texas A&M University
 
-    certifications:
+    Certificates:
       - name: Management of Technology (MOT)
+        issuer: Scheller College of Business, Georgia Tech
         date: 2025
-        summary: Scheller College of Business, Georgia Tech
       - name: Computational Materials Science & Engineering (CMSE)
+        issuer: School of MSE, Georgia Tech
         date: 2023
-        summary: School of MSE, Georgia Tech
 
-    service:
+    Service:
       - bullet: "Reviewer & Committee Member — SciPy Conference (2023, 2024, 2025)"
       - bullet: "Peer Reviewer (AI4Mat) — NeurIPS 2025, CVPR 2025, PEARC 2025, ICLR 2026"
       - bullet: "Peer Reviewer — Springer Nature, Journal of Materials, Chemical Papers, Artificial Intelligence Review, npj Computational Materials"
@@ -103,14 +101,14 @@ cv:
       - bullet: "President — Entrepreneurship Development Cell, NIT Durgapur (2016-2020)"
       - bullet: "Treasurer — Strokes (Art & Photography Club), NIT Durgapur (2017-2020)"
 
-    skills:
-      - label: Machine Learning / AI
-        details: Neural Networks, Gaussian Process Regression, Normalizing Flows, Autoencoders, Convolutional Networks
-      - label: Programming & Data Science
-        details: Python (PyTorch, GPyTorch, BOTorch, PyVista, SciPy, scikit-learn), R, Java, C
-      - label: Computational Materials Science
-        details: VASP, LAMMPS, GROMACS, DFT, Molecular Dynamics, CG-Martini3, ORCA
-      - label: HPC / Cloud Platforms
-        details: MPI, AWS, GCP, Azure, Shell Scripting (SLURM/PBS), Flask, Firebase, Hadoop, Big Data
-      - label: Autonomous Design & Decision Making
-        details: Bayesian Optimization, Active Learning, Sequential Decision Making, Pareto Frontier Analysis, Design of Experiments
+    Skills:
+      - name: Machine Learning / AI
+        keywords: [Neural Networks, Gaussian Process Regression, Normalizing Flows, Autoencoders, Convolutional Networks]
+      - name: Programming & Data Science
+        keywords: [Python (PyTorch, GPyTorch, BOTorch, PyVista, SciPy, scikit-learn), R, Java, C]
+      - name: Computational Materials Science
+        keywords: [VASP, LAMMPS, GROMACS, DFT, Molecular Dynamics, CG-Martini3, ORCA]
+      - name: HPC / Cloud Platforms
+        keywords: [MPI, AWS, GCP, Azure, Shell Scripting (SLURM/PBS), Flask, Firebase, Hadoop, Big Data]
+      - name: Autonomous Design & Decision Making
+        keywords: [Bayesian Optimization, Active Learning, Sequential Decision Making, Pareto Frontier Analysis, Design of Experiments]
