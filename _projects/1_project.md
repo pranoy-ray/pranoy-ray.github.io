@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Data-Efficient screening for molecular structure 
-description: Cheminformatics · DFT · PFAS · Small Molecules
+title: Molecular Voxelization Framework
+description: Cheminformatics · DFT · PFAS · Small Molecules · Structure Screening
 img: assets/img/voxmol.gif
 importance: 1
 category: work
