@@ -9,7 +9,6 @@ last_name: Ph.D
 contact_note: >
   Break the cycle, Morty. Rise above. Focus on Science.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Compuutational Materials Science Researcher and Data Scientist.
 footer_text: >
 keywords: pranoy, materials science, machine learning, density functional theory, molecular dynamics, dft, md, georgiatech, uchicago, argonne # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
