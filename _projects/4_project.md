@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Applied Statistics for Alloy Design
+title: Spatial Statistics for Alloy Design
 description: Electron Density · Spatial Correlations · Extrapolative ML
 img: assets/img/alloy.png
 importance: 3
