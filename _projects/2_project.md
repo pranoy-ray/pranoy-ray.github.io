@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Bayesian Optimization for Polymer Design
-description: Coarse-Graining · Martini3 · DoE
+title: Bayesian ML for Polymer Design
+description: Bayesian Optimization · Martini3 · DoE · Coarse-Graining
 img: assets/img/paretonpj.png
 importance: 2
 category: work
