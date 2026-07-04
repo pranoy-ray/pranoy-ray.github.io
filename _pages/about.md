@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Argonne National Laboratory & The University of Chicago
+subtitle: [Argonne National Laboratory & The University of Chicago](https://gagliardigroup.uchicago.edu/members/#postdoctoral-researchers)
 
 profile:
   align: right
