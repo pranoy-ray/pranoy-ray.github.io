@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Accelerated Molecular Screening
-description: Cheminformatics · DFT · Forever Chemicals
+title: Data-Efficient screening for molecular structure 
+description: Cheminformatics · DFT · PFAS · Small Molecules
 img: assets/img/voxmol.gif
 importance: 1
 category: work
-related_publications: false
+related_publications: true
 ---
 
 Pipelines for unsupervised capture of rotationally and translationally-invariant spatial features of a molecular structure, and its subsequent chemical effects (including but not limited to defects) on a voxelized grid.
@@ -16,5 +16,4 @@ Pipelines for unsupervised capture of rotationally and translationally-invariant
 **Related papers:**
 - [IMMI](https://link.springer.com/article/10.1007/s40192-024-00389-9)
 - [Advanced Science](https://doi.org/10.1002/advs.202523817)
-- [arXiv](https://arxiv.org/abs/2603.06953)
 - [arXiv](https://arxiv.org/abs/2605.17147)
