@@ -13,6 +13,6 @@ Capturing multiscale phase-separation phenomena in polymer blends through calibr
 {% include figure.liquid path="assets/img/paretonpj.png" title="Pareto Front" class="img-fluid rounded z-depth-1" %}
 <div class="caption">Actual output: CGMartini3-MOBO scheme</div>
 
-**Related papers:**
+**Related papers authored by Pranoy:**
 - [npj Computational Materials](https://www.nature.com/articles/s41524-025-01729-9)
 - [ChemRxiv](https://chemrxiv.org/engage/chemrxiv/article-details/69263681a10c9f5ca1c0700b)
