@@ -13,4 +13,4 @@ Simulating wildfire propagation dynamics and their interaction with environmenta
 {% include figure.liquid path="assets/img/timelapse-actual.gif" title="Forest Fire Simulation" class="img-fluid rounded z-depth-1" %}
 <div class="caption">Actual output: PDE Solver Timelapse</div>
 
-**Code:** [GitHub Repo](https://github.com/pranoy-ray/ForestFiresModeling)
+**Related Code and Implementation:** [GitHub Repo](https://github.com/pranoy-ray/ForestFiresModeling)
