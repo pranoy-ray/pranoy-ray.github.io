@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>Chicago, Illinois 60615</p>
+    <p>Chicago, Illinois, USA</p>
 
 selected_papers: true
 social: true
