@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-07-06'
+  last_updated: '2026-07-29'
 papers:
   SYuG3BUAAAAJ:4fKUyHm3Qg0C:
-    citations: 9
+    citations: 10
     title: 'Refining coarse-grained molecular topologies: a Bayesian optimization approach'
     year: '2025'
   SYuG3BUAAAAJ:5Ul4iDaHHb8C:
@@ -13,6 +13,10 @@ papers:
     citations: 9
     title: 'Ti-decorated C30 as a High-capacity Hydrogen Storage Material: Insights from Density Functional Theory'
     year: '2023'
+  SYuG3BUAAAAJ:V3AGJWp-ZtQC:
+    citations: 0
+    title: Spatial Statistics As a Sustainable Paradigm for Molecular Materials Screening
+    year: '2026'
   SYuG3BUAAAAJ:eJXPG6dFmWUC:
     citations: 1
     title: "ML Workflows for Screening Degradation\u2010Relevant Properties of Forever Chemicals"
@@ -34,6 +38,6 @@ papers:
     title: 'Zr doped C24 fullerene as efficient hydrogen storage material: Insights from DFT simulations'
     year: '2024'
   SYuG3BUAAAAJ:u9iWguZQMMsC:
-    citations: 183
+    citations: 185
     title: "High capacity reversible hydrogen storage in titanium doped 2D carbon allotrope \u03A8-graphene: Density Functional Theory investigations"
     year: '2021'
