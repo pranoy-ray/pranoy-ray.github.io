@@ -8,7 +8,7 @@ middle_name: Ray
 last_name: Ph.D
 contact_note: >
   Break the cycle, Morty. Rise above. Focus on Science. <br>
-  Carrier pigeons are preferred, but if you must use electronic mail, please send your message to gtpranoy@gmail.com.
+  Carrier pigeons are preferred, but if you must use electronic mail, please send your message to <a href = "mailto: gtpranoy@gmail.com">gtpranoy@gmail.com<!a>.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: >
 keywords: pranoy, materials science, machine learning, density functional theory, molecular dynamics, dft, md, georgiatech, uchicago, argonne # add your own keywords or leave empty
